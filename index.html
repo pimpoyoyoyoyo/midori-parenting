@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ko">
+<html lang="ko" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1023,7 +1023,7 @@ $('q').addEventListener('input',e=>{
 });
 $('clearQ').onclick=()=>{$('q').value='';q='';$('clearQ').classList.add('hidden');render();$('q').focus();};
 
-/* 다크 모드 (기기 설정을 기본으로 따르고, 버튼으로 바꿀 수 있음) */
+/* 다크 모드: 기본은 항상 밝은 화면(<html data-theme="light">). 오른쪽 위 버튼으로 바꾸면 그 선택을 기억함 */
 const root=document.documentElement;
 function sysDark(){return matchMedia('(prefers-color-scheme: dark)').matches;}
 function isDark(){const t=root.dataset.theme;return t?t==='dark':sysDark();}
