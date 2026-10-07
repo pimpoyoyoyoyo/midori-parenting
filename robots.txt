@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://midori-parenting.vercel.app/sitemap.xml

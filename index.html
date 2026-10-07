@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>마음은 언제나 미니멀 육아</title>
+<meta name="description" content="임신부터 육아까지, 직접 보고 써 본 도서·영화·육아용품·강의·유튜브와 육아 후기를 시기와 고민에 따라 모았어요.">
+<!-- 카카오톡·SNS 공유 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="마음은 언제나 미니멀 육아">
+<meta property="og:description" content="육아하면서 좋았던 것들, 함께 나눠요! 도서·영화·용품·학습 추천과 육아 후기">
+<meta property="og:site_name" content="마음은 언제나 미니멀 육아">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://midori-parenting.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="마음은 언제나 미니멀 육아 · 육아하면서 좋았던 것들, 함께 나눠요!">
+<meta property="og:url" content="https://midori-parenting.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://midori-parenting.vercel.app/">
+<!-- 폰트: 제목 SUITE / 본문 Pretendard / 영문 Montserrat -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE@2/fonts/variable/woff2/SUITE-Variable.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23FF6000'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='900' font-size='36' text-anchor='middle' fill='%231C1C1C'%3E미%3C/text%3E%3C/svg%3E">
+<style>
+/* ── 브랜드 컬러 ──
+   주황 #FF6000 (포인트·버튼·리본) / 베이지 #F2EDE6 (배경) / 검정 #1C1C1C (글씨·선택 상태) / 노랑 #FFE066 (강조 하이라이트)
+   ※ 주황은 작은 글씨에 쓰면 읽기 어려워(명도 대비 3:1) 글씨용으로는 진한 주황 #C24A00 사용 */
+:root{
+  --brand-orange:#FF6000; --brand-beige:#F2EDE6; --brand-black:#1C1C1C; --brand-yellow:#FFE066;
+  --bg:#F2EDE6; --surface:#FFFFFF; --panel:#FBF8F4; --ink:#1C1C1C; --muted:#4A4743; --soft:#6E6A64;
+  --line:#D9D1C5; --accent:#1C1C1C; --accent-ink:#FFFFFF; --warm:#C24A00; --note:#F7F1E8;
+  --shelf:#FF6000; --shelf-shadow:#E2D9CC; --frame:#E8E0D5; --warn-bg:#FFF6D1; --warn-line:#F0D66A;
+  --leave:#1C1C1C; --leave-bg:#FFFFFF; --scrim:#1C1C1Ccc; --pick:#FF6000;
+  --cta:#FF6000; --cta-ink:#1C1C1C; --hl:#FFE066; --tab-line:#FF6000;
+  --f-title:'SUITE Variable','SUITE','Pretendard Variable',Pretendard,sans-serif;
+  --f-body:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  --f-en:'Montserrat','Pretendard Variable',Pretendard,sans-serif;
+  font-family:var(--f-body);
+  color:var(--ink); background:var(--bg); color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1C1C1C; --surface:#262626; --panel:#262626; --ink:#F2EDE6; --muted:#CFC8BE; --soft:#A39C92;
+    --line:#3A3A3A; --accent:#F2EDE6; --accent-ink:#1C1C1C; --warm:#FF8A3D; --note:#2E2B26;
+    --shelf:#FF6000; --shelf-shadow:#2A2A2A; --frame:#2A2A2A; --warn-bg:#2E2A1C; --warn-line:#6B5A1E;
+    --leave:#F2EDE6; --leave-bg:#333333; --scrim:#000000cc; --pick:#FF6000; --hl:#8a6d00; --cover-ph:#333333; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1C1C1C; --surface:#262626; --panel:#262626; --ink:#F2EDE6; --muted:#CFC8BE; --soft:#A39C92;
+  --line:#3A3A3A; --accent:#F2EDE6; --accent-ink:#1C1C1C; --warm:#FF8A3D; --note:#2E2B26;
+  --shelf:#FF6000; --shelf-shadow:#2A2A2A; --frame:#2A2A2A; --warn-bg:#2E2A1C; --warn-line:#6B5A1E;
+  --leave:#F2EDE6; --leave-bg:#333333; --scrim:#000000cc; --pick:#FF6000; --hl:#8a6d00; --cover-ph:#333333; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink)}
+button,a,input{font:inherit;color:inherit}
+button{cursor:pointer}
+.shell{max-width:1180px;margin:auto;padding:26px 24px 80px}
+.hidden{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* 책 카드 한줄평 미리보기: 2줄까지 */
+.b-review{font-size:13px;line-height:1.5;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;word-break:keep-all}
+input[type=search]::-webkit-search-cancel-button{display:none}
+
+/* 상단 */
+.mast{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}
+.brand{font-size:24px;letter-spacing:-.055em;font-weight:800;color:inherit;text-decoration:none}
+.mast-right{display:flex;align-items:center;gap:14px}
+.eyebrow{font-size:12px;letter-spacing:.16em;color:var(--soft)}
+.theme-btn{border:1px solid var(--line);background:transparent;border-radius:30px;width:40px;height:40px;font-size:17px;display:grid;place-items:center}
+.intro{display:flex;justify-content:space-between;gap:30px;align-items:end;padding:30px 0 20px}
+.intro h1{font-weight:800;font-size:clamp(30px,4vw,46px);line-height:1.24;letter-spacing:-.07em;margin:0}
+.intro p{font-size:16px;line-height:1.8;max-width:365px;color:var(--muted);margin:0}
+
+/* 검색 */
+.search{position:relative;margin:0 0 18px}
+.search input{width:100%;height:50px;border:1px solid var(--line);border-radius:30px;background:var(--surface);padding:0 48px 0 46px;font-size:16px;color:var(--ink)}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.search .ico{position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:16px;opacity:.7;pointer-events:none}
+.search .clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:0;background:transparent;width:36px;height:36px;border-radius:50%;font-size:18px;color:var(--soft)}
+
+/* 탭 */
+.media-tabs{display:flex;gap:24px;border-bottom:1px solid var(--line);margin:0 0 22px;overflow-x:auto;scrollbar-width:none}
+.media-tabs::-webkit-scrollbar{display:none}
+.media-tabs button{border:0;background:transparent;border-bottom:3px solid transparent;padding:12px 2px;color:var(--soft);font-size:17px;font-weight:700;white-space:nowrap;min-height:48px}
+.media-tabs button[aria-selected=true]{border-color:var(--accent);color:var(--accent)}
+.media-tabs .n{font-size:12px;font-weight:600;opacity:.75;margin-left:3px}
+/* 탭: 이모지 칸과 글자를 같은 높이(1em)의 상자로 만들고 세로 가운데로 맞춤 */
+.media-tabs button{display:inline-flex;align-items:center;gap:5px}
+.tab-ico{display:inline-flex;align-items:center;justify-content:center;width:1.2em;height:1em;line-height:1;flex:none}
+.tab-txt{display:inline-block;line-height:1}
+/* 그림 폭 보정: 📚🧸🎓는 17px, 🎬📝는 15px라서 🎬📝 칸만 양옆 1px씩 좁혀 눈에 보이는 간격을 맞춤.
+   새 이모지를 쓰면 그림 폭에 맞춰 .tab-ico-키 에 칸 너비 보정을 추가 (디자인 가이드 ⑦) */
+.tab-ico-movies,.tab-ico-tips{width:calc(1.2em - 2px)}
+
+/* 필터 */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}
+.filters button{border:1px solid var(--line);border-radius:30px;padding:10px 17px;background:transparent;color:var(--ink);font-size:14px;min-height:44px}
+.filters button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.count{font-size:13px;color:var(--soft);margin-bottom:16px}
+
+/* 책장 */
+.shelf{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px;border-bottom:13px solid var(--shelf);padding:12px 10px 20px;box-shadow:0 8px 0 var(--shelf-shadow);align-items:start}
+.book{border:0;background:transparent;min-width:0;text-align:left;padding:0;display:flex;flex-direction:column;justify-content:flex-start;gap:8px}
+.book .cover-frame{margin-bottom:4px}
+/* ── 표지 가이드 ──
+   틀(frame): 가로:세로 = 1:1.2, 표지는 틀 바닥에 붙여 가운데 정렬
+   표지(cover): 틀 너비의 72%, 비율 1:1.45 고정 (국내 단행본 평균), 넘치는 부분은 가운데 기준으로 잘라 맞춤
+   모서리: 책등 쪽(왼쪽) 2px, 바깥쪽 4px / 그림자: 오른쪽 아래 한 방향 */
+:root{--cover-w:66%;--cover-ratio:1/1.45}
+.cover-frame{aspect-ratio:1/1.25;flex:none;display:flex;align-items:center;justify-content:center;background:var(--frame);padding:0;border-radius:6px;position:relative;overflow:hidden}
+/* 표지 상자(.cover): 크기·모서리·그림자 담당, 이미지는 안에서 꽉 채움 */
+/* contain:size → 표지 상자 크기는 너비와 비율로만 정해짐 (iOS Safari가 원본 이미지 크기로 상자를 키우는 문제 방지) */
+/* iOS Safari에서도 크기가 흔들리지 않도록 aspect-ratio 대신 padding 비율로 상자 높이를 고정 (1:1.45) */
+.cover{display:block;position:relative;flex:none;width:var(--cover-w);height:0;padding-top:calc(var(--cover-w) * 1.45);min-height:0;border-radius:2px 4px 4px 2px;overflow:hidden;box-shadow:4px 4px 10px #0000002e;background:var(--cover-ph,#DDD4C8);transition:transform .2s,width .2s}
+/* YES24 작은 이미지(L)는 가장자리에 1px 검은 테두리가 있어서, 사방 2px씩 키워 상자 밖으로 밀어내 숨김 */
+/* 이미지는 상자를 꽉 채우고, 살짝 확대(3%)해서 YES24 작은 이미지의 1px 검은 테두리를 가림 */
+.cover img{display:block;position:absolute;top:0;left:0;width:100%;height:100%;max-width:100%;object-fit:cover;object-position:center top;transform:scale(1.03);transform-origin:center center}
+/* 흰 표지가 배경에 묻히지 않도록 아주 옅은 윤곽선 + 책등 쪽 음영 */
+.cover::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px #0000001f,inset 3px 0 0 #00000010;pointer-events:none;z-index:1}
+/* 넓적한 표지(1:1.3 미만): 양옆을 자르면 제목이 잘려서, 상자 크기는 다른 책과 같게 두고
+   표지는 자르지 않고 가운데에 넣은 뒤 위아래 빈 곳을 같은 표지를 흐리게 깔아 채움 */
+.cover.is-wide img{object-fit:contain;object-position:center center;transform:none;z-index:1}
+.cover.is-wide img.blur-bg{object-fit:cover;filter:blur(10px) saturate(1.1);transform:scale(1.25);opacity:.85;z-index:0}
+/* 아주 길쭉한 표지(1:1.62 초과)는 상자 크기는 그대로 두고 그 안에 자르지 않고 넣음 → JS fitCover에서 class만 붙임 */
+.cover.is-fit{background:transparent;box-shadow:none;border-radius:0}
+.cover.is-fit::after{display:none}
+.cover.is-fit img{object-fit:contain;object-position:left bottom;transform:none;filter:drop-shadow(4px 4px 5px #0000002e)}
+.book:hover .cover,.book:focus-visible .cover{transform:translateY(-5px)}
+.cover-fallback{position:absolute;inset:0;background:#324f5d;color:#fff;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;text-align:center;padding:12px;font-size:14px;line-height:1.4;word-break:keep-all}
+.cover-fallback .big{font-size:28px}
+.meta{font-size:12px;color:var(--soft)}
+.title{font-weight:700;line-height:1.5;font-size:16px;word-break:keep-all;overflow-wrap:anywhere}
+.hint{font-size:13px;color:var(--warm);line-height:1.45;word-break:keep-all;overflow-wrap:anywhere}
+
+/* 영화·강의·유튜브 카드 */
+.media-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.media-card{border:0;text-align:left;padding:0;background:var(--surface);min-width:0;box-shadow:0 3px 12px #17242a12;border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.media-art{height:270px;padding:22px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;position:relative;overflow:hidden}
+.media-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* 포스터가 뜨면 위에 겹치는 글씨는 숨김 (포스터가 없을 때만 글씨 카드로 보여 줌) */
+.media-art.has-poster>span{display:none}
+.media-art .tag{position:relative;font-size:12px;letter-spacing:.1em}
+.media-art .orig{position:relative;font-size:22px;font-weight:700;letter-spacing:-.03em;line-height:1.25;opacity:.92}
+.media-art .big-ico{position:relative;font-size:56px;opacity:.85}
+.art-1{background:linear-gradient(145deg,#152f3d,#526b75)}
+.art-2{background:linear-gradient(145deg,#5f4e48,#a07862)}
+.art-3{background:linear-gradient(145deg,#2d4b55,#6c878d)}
+.art-c1{background:#d6c4a6;color:#233640}
+.art-c2{background:#a9bdba;color:#233640}
+.media-copy{padding:16px 18px 20px;flex:1}
+.media-copy b{display:block;font-size:17px;line-height:1.4;word-break:keep-all}
+.media-copy small{display:block;margin-top:8px;color:var(--soft);font-size:13px;line-height:1.4}
+.media-copy .hint{margin-top:8px}
+.badge{display:inline-block;font-size:12px;font-weight:700;color:var(--leave);background:var(--leave-bg);padding:4px 9px;border-radius:20px;margin-bottom:8px}
+.cover-frame .badge{position:absolute;left:8px;top:8px;margin:0}
+/* 강력 추천: 표지 아래 라벨만 표시 (리본·테두리 없음) */
+.pick-label{font-size:12px;font-weight:700;color:var(--pick);letter-spacing:.02em}
+.pick-pill{display:inline-block;font-size:13px;font-weight:700;color:#fff;background:var(--pick);padding:5px 11px;border-radius:20px;margin-bottom:8px}
+
+/* 빈 결과 */
+.empty{grid-column:1/-1;text-align:center;padding:44px 20px;color:var(--muted)}
+.empty .big{font-size:40px;display:block;margin-bottom:10px}
+.empty strong{display:block;font-size:18px;color:var(--ink);margin-bottom:6px}
+.empty p{margin:0 0 18px;line-height:1.6}
+.suggest{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.suggest button{border:1px solid var(--line);background:var(--surface);border-radius:30px;padding:9px 14px;font-size:14px;min-height:44px}
+
+.source-line{color:var(--soft);font-size:12px;margin:20px 0;line-height:1.6}
+.footer{border-top:1px solid var(--line);margin-top:66px;padding-top:16px;color:var(--soft);font-size:13px;line-height:1.7}
+
+/* 상세: 데스크톱은 가운데, 모바일은 바텀시트 */
+.dialog{position:fixed;inset:0;background:var(--scrim);display:none;align-items:center;justify-content:center;padding:20px;z-index:5}
+.dialog.open{display:flex}
+.panel{background:var(--panel);width:min(640px,100%);max-height:90vh;overflow:auto;border-radius:14px;padding:24px;position:relative}
+.grab{display:none}
+.close{position:absolute;right:12px;top:10px;border:0;background:transparent;font-size:28px;width:44px;height:44px;border-radius:50%;color:var(--muted)}
+.detail{display:grid;grid-template-columns:150px 1fr;gap:24px;align-items:start;padding-top:24px}
+.detail img{width:100%;aspect-ratio:var(--cover-ratio);object-fit:cover;object-position:center top;border-radius:2px 4px 4px 2px;box-shadow:5px 8px 18px #0003,0 0 0 1px #0000001a;background:var(--cover-ph,#DDD4C8)}
+/* 상세 창: 비율이 많이 다른 표지는 원래 비율 그대로 (흰 여백 없음) */
+.detail img.fit{aspect-ratio:auto;height:auto;object-fit:fill}
+.detail h2,.panel h2{font-size:24px;line-height:1.35;letter-spacing:-.04em;margin:8px 0}
+.panel p{line-height:1.65;color:var(--muted);margin:6px 0}
+.pill{font-size:13px;color:var(--warm);font-weight:700}
+.when{display:inline-block;margin-top:6px;background:var(--note);border-radius:20px;padding:6px 12px;font-size:14px;color:var(--ink)}
+.review{margin:20px 0 0;padding:18px;background:var(--note);border-radius:10px}
+.review h3{margin:0 0 8px;font-size:13px;letter-spacing:.04em;color:var(--warm)}
+.review blockquote{margin:0;font-size:17px;line-height:1.65}
+.review.todo{background:transparent;border:2px dashed var(--line)}
+.review.todo blockquote{color:var(--soft);font-size:15px}
+.disclaimer{display:flex;gap:10px;margin:14px 0 0;padding:12px 14px;background:var(--warn-bg);border:1px solid var(--warn-line);border-radius:10px;font-size:13px;line-height:1.55;color:var(--ink)}
+.info{margin:14px 0 0;font-size:14px;line-height:1.6;color:var(--muted)}
+.out{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:22px;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:14px 18px;border-radius:8px;font-size:15px;font-weight:700;min-height:50px}
+.out-note{font-size:12px;color:var(--soft);text-align:center;margin-top:8px}
+
+@media(max-width:1100px){
+  .shelf{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:940px){
+  .shelf{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:780px){
+  .shell{padding:20px 18px 60px}
+  .intro{display:block;padding:22px 0 16px}
+  .intro p{margin-top:14px}
+  .shelf{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}
+  .title{font-size:15px}
+  .media-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .media-art{height:220px}
+}
+@media(max-width:560px){
+  .shell{padding:16px 16px 60px}
+  .mast .eyebrow{display:none}
+  .brand{font-size:21px}
+  .intro h1{font-size:clamp(25px,7.2vw,30px);line-height:1.35}
+  .intro p{font-size:15px}
+  .media-tabs{gap:18px}
+  .media-tabs button{font-size:16px}
+  .filters{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px 22px;padding:0 16px;scrollbar-width:none}
+  .filters::-webkit-scrollbar{display:none}
+  .filters button{padding:9px 14px;white-space:nowrap;flex:none}
+  .media-list{grid-template-columns:1fr}
+  .media-card{flex-direction:row}
+  .media-art{width:42%;height:auto;min-height:190px;padding:16px;flex:none}
+  .media-art .orig{font-size:17px}
+  .media-art .big-ico{font-size:40px}
+  .media-copy{padding:16px}
+  /* 바텀시트 */
+  .dialog{align-items:flex-end;padding:0}
+  .panel{width:100%;max-height:88vh;border-radius:18px 18px 0 0;padding:14px 20px calc(24px + env(safe-area-inset-bottom));animation:up .22s ease-out}
+  .grab{display:block;width:44px;height:5px;border-radius:5px;background:var(--line);margin:0 auto 6px}
+  .detail{grid-template-columns:96px 1fr;gap:16px;padding-top:18px}
+  .detail h2,.panel h2{font-size:20px}
+}
+@keyframes up{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ── 브랜드 적용 ── */
+/* 폰트 역할 */
+.brand,.intro h1,.panel h2,.title,.media-copy b,.media-tabs button,.empty strong,.review h3{font-family:var(--f-title)}
+.en,.eyebrow,.media-art .tag,.media-art .orig{font-family:var(--f-en)}
+.brand{font-weight:800;letter-spacing:-.04em}
+.brand .zip{font-family:var(--f-en);font-weight:800;color:var(--brand-orange);letter-spacing:0;margin-left:1px}
+.eyebrow{font-weight:600;letter-spacing:.2em;color:var(--ink)}
+.intro h1{font-weight:800;letter-spacing:-.05em}
+.intro h1 mark{background:linear-gradient(transparent 58%,var(--hl) 58%,var(--hl) 92%,transparent 92%);color:inherit;padding:0 .04em}
+.intro h1 .dot{color:var(--brand-orange)}
+.title{font-weight:700;letter-spacing:-.02em}
+
+/* 탭: 선택 밑줄 주황 */
+.media-tabs button{font-weight:700}
+.media-tabs button[aria-selected=true]{border-color:var(--tab-line);color:var(--ink)}
+
+/* 필터: 선택 검정, 마우스 올리면 주황 테두리 */
+.filters button{background:var(--surface);border-color:var(--line);font-weight:500}
+.filters button:hover{border-color:var(--brand-orange)}
+.filters button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+
+/* 검색 */
+.search input{border-color:var(--line)}
+.search input:focus{outline:2px solid var(--brand-orange);outline-offset:1px}
+
+/* 책장 */
+.shelf{border-bottom-width:8px;box-shadow:0 6px 0 var(--shelf-shadow)}
+.cover-fallback{background:var(--brand-black)}
+.pick-label{align-self:flex-start;background:var(--brand-yellow);color:#1C1C1C;padding:3px 9px;border-radius:20px;font-size:12px;font-weight:700}
+.pick-pill{background:var(--brand-yellow);color:#1C1C1C}
+.badge{border:1px solid var(--line)}
+
+/* 영화·강의·유튜브 카드 */
+.art-1{background:#1C1C1C}
+.art-2{background:#FF6000;color:#1C1C1C}
+.art-3{background:#3A3530}
+.art-c1{background:#FFE066;color:#1C1C1C}
+.art-c2{background:#1C1C1C;color:#F2EDE6}
+.media-art .tag{font-weight:600;letter-spacing:.14em}
+.media-art .orig{font-weight:700;letter-spacing:-.01em}
+.media-card{box-shadow:none;border:1px solid var(--line)}
+
+/* 유튜브 채널 카드: 채널 프로필을 원형으로 크게, 핸들은 영문 폰트 */
+.yt-art{align-items:flex-start}
+.yt-1{background:#1C1C1C;color:#F2EDE6}
+.yt-2{background:#FF6000;color:#1C1C1C}
+.yt-avatar{position:relative;align-self:center;width:112px;height:112px;border-radius:50%;overflow:hidden;background:#3A3A3A;box-shadow:0 0 0 4px #F2EDE6,0 6px 16px #00000040;display:grid;place-items:center;flex:none}
+.yt-avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.yt-ph{font-size:34px;color:#FF6000}
+.yt-handle{position:relative;align-self:center;font-family:var(--f-en);font-size:12px;font-weight:600;letter-spacing:.02em;opacity:.9;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.yt-head{display:flex;gap:16px;align-items:center;padding-top:22px}
+.yt-avatar.sm{width:72px;height:72px;box-shadow:0 0 0 3px var(--panel),0 4px 10px #00000030}
+.yt-head h2{margin:4px 0 2px}
+.en-handle{font-family:var(--f-en);font-size:13px}
+.yt-about{margin:14px 0 0!important;font-size:15px;color:var(--ink)!important;line-height:1.65}
+@media(max-width:560px){
+  .yt-avatar{width:84px;height:84px}
+  .yt-ph{font-size:26px}
+  .yt-handle{font-size:10.5px}
+}
+
+/* 만든 사람: 상단 프로필 버튼 → 소개 창(상세 창과 같은 바텀시트), 한줄평에는 서명 */
+.profile-btn{width:44px;height:44px;border-radius:50%;border:0;padding:0;background:var(--brand-yellow);color:#1C1C1C;display:grid;place-items:center;font-family:var(--f-title);font-weight:800;font-size:17px;box-shadow:0 0 0 2px var(--brand-orange);overflow:hidden}
+.profile-btn img{width:100%;height:100%;object-fit:cover}
+.profile-btn:hover{box-shadow:0 0 0 3px var(--brand-orange)}
+.mast-right{gap:10px}
+.about-sheet{padding-top:20px}
+.about-sheet .eyebrow{font-family:var(--f-en);font-weight:700;font-size:11px;letter-spacing:.2em;color:var(--warm);display:block}
+.about-sheet .who{display:flex;gap:14px;align-items:center;margin:10px 0 14px}
+.about-sheet .avatar{flex:none;width:68px;height:68px;border-radius:50%;background:var(--brand-yellow);color:#1C1C1C;display:grid;place-items:center;font-family:var(--f-title);font-weight:800;font-size:26px;box-shadow:0 0 0 3px var(--panel),0 0 0 5px var(--brand-orange);overflow:hidden}
+.about-sheet .avatar img{width:100%;height:100%;object-fit:cover}
+.about-sheet h2{margin:0 0 2px}
+.about-sheet small{font-size:13.5px;color:var(--soft)}
+.about-sheet .story{font-size:15px;line-height:1.75;color:var(--ink)!important;margin:0 0 14px!important}
+.about-sheet .counts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}
+.about-sheet .counts span{font-size:12.5px;font-weight:700;background:var(--brand-yellow);color:#1C1C1C;border-radius:20px;padding:5px 11px}
+.about-sheet h3{font-family:var(--f-title);font-weight:800;font-size:14px;margin:0 0 8px}
+.about-sheet ul{margin:0 0 20px;padding:14px 16px;list-style:none;display:grid;gap:8px;font-size:14px;line-height:1.55;background:var(--note);border-radius:10px}
+.about-sheet li{display:flex;gap:9px}
+.about-sheet li::before{content:"✓";color:var(--brand-orange);font-weight:800}
+.about-sheet .sns{display:flex;gap:8px;flex-wrap:wrap}
+.about-sheet .sns a,.about-sheet .sns span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;border:1px solid var(--line);color:var(--ink)}
+.about-sheet .sns a.primary{background:var(--brand-orange);border-color:var(--brand-orange);color:#1C1C1C}
+.about-sheet .sns span{border-style:dashed;color:var(--soft);font-weight:500}
+.sig{display:flex;align-items:center;gap:8px;margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:13px;font-weight:700;color:var(--ink)}
+.sig-av{width:26px;height:26px;border-radius:50%;background:var(--brand-yellow);color:#1C1C1C;display:grid;place-items:center;font-family:var(--f-title);font-weight:800;font-size:12px;overflow:hidden;flex:none}
+.sig-av img{width:100%;height:100%;object-fit:cover}
+@media(max-width:560px){.mast-right{gap:8px}}
+
+/* 탭이 화면보다 길 때: 오른쪽 끝 흐림으로 '더 있음'을 알려 줌 */
+.media-tabs.more{-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent)}
+.media-tabs.more.end{-webkit-mask-image:none;mask-image:none}
+@media(max-width:560px){.media-tabs{gap:14px}.media-tabs button{font-size:15px}}
+
+/* 꿀팁 카드: 이미지 없는 글 카드. 체크리스트가 핵심 */
+.tip-card{flex-direction:column!important;padding:20px;gap:12px;border-top:4px solid var(--brand-orange)}
+.tip-top{display:flex;align-items:center;gap:8px}
+.tip-icon{width:36px;height:36px;border-radius:50%;background:var(--brand-yellow);display:grid;place-items:center;font-size:18px;flex:none}
+.tip-topic{font-size:13px;font-weight:700;color:var(--warm)}
+.tip-card>b{font-family:var(--f-title);font-weight:800;font-size:18px;line-height:1.45;letter-spacing:-.02em;word-break:keep-all}
+.tip-points{margin:0;padding:0;list-style:none;display:grid;gap:7px;font-size:14px;line-height:1.55;color:var(--ink)}
+.tip-points li{display:flex;gap:8px}
+.tip-points li::before{content:"✓";color:var(--brand-orange);font-weight:800;flex:none}
+.tip-foot{margin-top:auto;padding-top:10px;border-top:1px dashed var(--line);display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;color:var(--soft)}
+.panel .tip-points{margin-top:14px;font-size:15px;background:var(--note);border-radius:10px;padding:14px 16px}
+.tip-date{font-size:13px!important;color:var(--soft)!important}
+.tip-fact{margin:14px 0 0;padding:16px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.tip-fact h3,.tip-related h3{margin:0 0 8px;font-family:var(--f-title);font-size:14px;color:var(--ink)}
+.tip-fact p{margin:0 0 10px!important;font-size:14px;color:var(--ink)!important}
+.tip-fact a{display:inline-flex;min-height:44px;align-items:center;font-size:13.5px;font-weight:700;color:var(--warm);text-decoration:underline;text-underline-offset:3px}
+.tip-related{margin-top:18px}
+.tip-related div{display:flex;flex-wrap:wrap;gap:8px}
+.tip-related button{border:1px solid var(--line);background:var(--surface);border-radius:30px;padding:0 14px;min-height:44px;font-size:14px;font-weight:600;text-align:left}
+.tip-related button:hover{border-color:var(--brand-orange)}
+
+/* 공부 탭: 유튜브·강의 통일 카드 + 위쪽 선택 버튼(세그먼트) */
+.filters.seg{display:flex;flex-wrap:nowrap;gap:2px;background:var(--surface);border:1px solid var(--line);border-radius:30px;padding:3px;max-width:420px}
+.filters.seg button{flex:1;border:0;border-radius:30px;background:transparent;min-height:44px;font-weight:700;font-size:14px;color:var(--soft);padding:0 10px}
+.filters.seg button[aria-pressed=true]{background:var(--accent);color:var(--accent-ink)}
+.seg-n{font-family:var(--f-en);font-size:12px;opacity:.8}
+.study-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.study-card{position:relative;display:flex;flex-direction:row;align-items:center;gap:16px;padding:16px 40px 16px 16px;border-radius:12px;background:var(--surface);border:1px solid var(--line);color:inherit;text-decoration:none;min-width:0}
+a.study-card:hover{border-color:var(--brand-orange)}
+a.study-card:focus-visible{outline:2px solid var(--brand-orange);outline-offset:2px}
+.s-go{position:absolute;right:14px;top:14px;font-size:16px;font-weight:800;color:var(--soft)}
+.s-circle{position:relative;flex:none;width:68px;height:68px;border-radius:50%;overflow:hidden;display:grid;place-items:center;font-size:30px}
+.s-circle.yt{background:#3A3A3A;box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--brand-orange)}
+.s-circle.yt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.s-circle .s-ph{font-size:22px;color:var(--brand-orange)}
+.s-circle.course{background:var(--brand-yellow);box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--brand-black)}
+.s-body{min-width:0;display:flex;flex-direction:column;gap:3px}
+.s-kind{font-family:var(--f-en);font-weight:700;font-size:10.5px;letter-spacing:.14em;color:var(--soft)}
+.s-kind.yt{color:#C4302B}
+.s-body b{font-family:var(--f-title);font-weight:800;font-size:16px;line-height:1.35;word-break:keep-all}
+.s-body small{font-size:12.5px;color:var(--soft);line-height:1.4;overflow-wrap:anywhere}
+.s-body .hint{margin-top:2px}
+@media(max-width:780px){.study-list{grid-template-columns:1fr}.s-circle{width:56px;height:56px;font-size:25px}.study-card{padding:14px 36px 14px 14px;gap:13px}.filters.seg{margin:0 0 18px;padding:3px;overflow:visible}}
+
+/* 영화·드라마: 포스터 그리드 (원래 비율 그대로, 상세 창 없음) */
+.movie-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px 18px;align-items:start}
+.m-card{min-width:0;display:flex;flex-direction:column;gap:6px}
+.m-poster{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:center top;border-radius:6px;box-shadow:4px 5px 12px #0000002e;background:var(--frame);margin-bottom:16px}
+.m-fallback{aspect-ratio:2/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px;text-align:center;font-size:30px;background:var(--brand-black);color:var(--brand-beige)}
+.m-fallback span{font-family:var(--f-title);font-size:14px;font-weight:700;line-height:1.4;word-break:keep-all}
+.m-kind{font-family:var(--f-en);font-weight:700;font-size:11px;letter-spacing:.12em;color:var(--soft)}
+.m-title{font-family:var(--f-title);font-weight:800;font-size:16px;line-height:1.4;word-break:keep-all}
+.m-review{margin:2px 0 0;font-size:13.5px;line-height:1.55;color:var(--ink);background:var(--note);border-left:3px solid var(--brand-orange);border-radius:4px;padding:8px 10px;word-break:keep-all}
+.m-hint{margin:0;font-size:13px;line-height:1.45;color:var(--warm);word-break:keep-all}
+@media(max-width:1100px){.movie-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:940px){.movie-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:780px){.movie-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}.m-title{font-size:15px}.m-review{font-size:13px}}
+
+/* 꿀팁: 블로그 글을 큰 썸네일 카드로. 누르면 상세 창 없이 블로그 글로 바로 이동 (새 창) */
+.blog-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.blog-card{display:flex;flex-direction:column;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;color:inherit;text-decoration:none}
+a.blog-card:hover{border-color:var(--brand-orange)}
+a.blog-card:focus-visible{outline:2px solid var(--brand-orange);outline-offset:2px}
+.blog-thumb{position:relative;display:block;width:100%;height:0;padding-top:62.5%;background:var(--frame);overflow:hidden}
+.blog-thumb img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+/* 썸네일이 안 뜨면 브랜드 색 배경 + 제목 */
+.blog-ph{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:18px;text-align:center;background:var(--brand-black);color:var(--brand-beige);font-family:var(--f-title);font-weight:800;font-size:17px;line-height:1.4;word-break:keep-all}
+.blog-body{display:flex;flex-direction:column;gap:4px;padding:13px 15px 15px}
+.blog-kind{font-family:var(--f-en);font-weight:700;font-size:10.5px;letter-spacing:.14em;color:#03A94D}
+.blog-body b{font-family:var(--f-title);font-weight:800;font-size:17px;line-height:1.4;word-break:keep-all}
+.blog-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:6px;font-size:12px;color:var(--soft)}
+.blog-foot .date{font-family:var(--f-en);font-weight:600}
+.blog-foot .go{font-weight:700}
+@media(max-width:940px){.blog-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.blog-list{grid-template-columns:1fr;gap:16px}}
+
+/* 상세 */
+.pill{color:var(--warm)}
+.review{background:var(--note);border-left:4px solid var(--brand-orange)}
+.review.todo{border:2px dashed var(--line)}
+.out{background:var(--cta);color:var(--cta-ink);font-family:var(--f-title);font-weight:800;border-radius:30px}
+.out:hover{filter:brightness(1.05)}
+/* QA: 터치 영역 44px 이상 */
+.theme-btn{width:44px;height:44px}
+.search .clear{width:44px;height:44px;right:3px}
+.empty .reset{margin-top:4px;border:0;background:var(--accent);color:var(--accent-ink);border-radius:30px;padding:11px 18px;font-weight:700;min-height:44px}
+.suggest button:hover{border-color:var(--brand-orange)}
+
+/* ── 카드 글 줄 맞춤 기준 ──
+   같은 줄에 놓인 카드끼리 표지 / 강력 추천 / 주제·저자 / 제목 / 한줄평 / 이럴 때 보세요 칸의 시작 높이를 맞춤.
+   각 칸의 높이는 그 줄에서 가장 긴 카드에 맞춰지고, 빈 칸은 높이 0 (subgrid 지원 브라우저, 미지원이면 기존 배치) */
+.pick-label:empty{padding:0;background:none}
+.meta:empty,.b-review:empty,.hint:empty,.m-hint:empty{margin:0}
+@supports (grid-template-rows: subgrid){
+  .shelf{row-gap:0}
+  .book{display:grid;grid-row:span 6;grid-template-rows:subgrid;row-gap:0;align-content:start;margin-bottom:28px}
+  .book>*{margin-bottom:8px;min-width:0;min-height:0}
+  .book>*:empty{margin-bottom:0}
+  .book>.cover-frame{margin-bottom:12px}
+  .book>.pick-label{justify-self:start}
+  .movie-grid{row-gap:0}
+  .m-card{display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:0;margin-bottom:26px}
+  .m-card>*{margin-bottom:6px}
+  .m-card>*:empty{margin-bottom:0}
+  /* 포스터 그림자 때문에 글이 붙어 보여서 포스터 아래만 넓게 (디자인 가이드 ⑨) */
+  .m-card>.m-poster{margin-bottom:16px}
+}
+
+/* ── 카드 왼쪽 선 맞춤 ──
+   표지·강력 추천·주제·제목·한줄평·이럴 때 보세요가 모두 같은 왼쪽 선에서 시작.
+   표지는 카드 너비를 꽉 채우고(틀 배경 없음), 줄 안의 표지들은 아래 선을 맞춤.
+   카드 글 앞의 이모지와 따옴표는 빼서 첫 글자 위치를 통일 */
+:root{--cover-w:100%}
+.book .cover-frame{aspect-ratio:auto;background:transparent;border-radius:0;overflow:visible;display:flex;align-items:flex-end;justify-content:flex-start}
+@supports (grid-template-rows: subgrid){.book>.cover-frame{align-self:end}}
+.book .cover{border-radius:3px 6px 6px 3px}
+.b-review{color:var(--muted)}
+.book .hint,.m-hint,.study-card .hint{display:block;color:var(--warm);font-weight:600}
+
+/* 맨 위로 버튼 */
+.to-top{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));width:48px;height:48px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);font-size:20px;font-weight:800;box-shadow:0 4px 12px #00000033;z-index:4;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:focus-visible{outline:2px solid var(--brand-orange);outline-offset:2px}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header class="mast">
+    <a class="brand" id="homeLink" href="./" aria-label="마음은 언제나 미니멀 육아 홈으로">마음은 언제나 <span class="zip">미니멀 육아</span></a>
+    <div class="mast-right">
+      <span class="eyebrow">READ · WATCH · LEARN</span>
+      <button class="profile-btn" id="profileBtn" type="button" aria-label="만든 사람 소개"></button>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="화면 밝기 전환">🌙</button>
+    </div>
+  </header>
+
+  <section class="intro">
+    <h1>육아하면서 <mark>좋았던 것들</mark><br>함께 나눠요<span class="dot">!</span></h1>
+    <p>당신의 육아가 보다 행복하길 바라며 직접 보고 좋았던 것들을 정리했습니다</p>
+  </section>
+
+  <div class="search" role="search">
+    <span class="ico" aria-hidden="true">🔍</span>
+    <input id="q" type="search" placeholder="제목·저자·고민으로 검색" aria-label="추천 검색" autocomplete="off">
+    <button class="clear hidden" id="clearQ" type="button" aria-label="검색어 지우기">✕</button>
+  </div>
+
+  <nav class="media-tabs" role="tablist" id="tabs"></nav>
+  <div class="filters" id="filters"></div>
+  <div class="count" id="count"></div>
+  <h2 class="sr-only" id="list-title">책 목록</h2>
+  <section id="list" role="tabpanel" aria-live="polite" aria-labelledby="list-title"></section>
+  <p class="source-line" id="source"></p>
+
+  <button class="to-top" id="toTop" type="button" aria-label="맨 위로 이동">↑</button>
+  <footer class="footer">
+    모든 추천은 직접 보고 경험한 개인적인 기록입니다. 건강·의료 관련 결정은 꼭 전문가와 상담하세요.
+  </footer>
+</main>
+
+<div class="dialog" id="dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+  <div class="panel">
+    <div class="grab" aria-hidden="true"></div>
+    <button class="close" id="close" type="button" aria-label="닫기">×</button>
+    <div id="detail"></div>
+  </div>
+</div>
+
+<script>
+/* ───────── 만든 사람 (자기소개) ─────────
+   [ ]로 된 값은 예시 → 직접 작성
+   avatar:   프로필 사진 주소 (비우면 avatarText 글자가 노란 원 안에 표시)
+   links:    url이 비어 있으면 '주소 입력 필요' 점선 버튼으로 표시 (첫 번째 링크가 주황 버튼)
+*/
+// 프로필 사진을 파일 안에 넣어 둠 → 미리보기·다른 주소에서도 항상 보임 (원본: profile.jpg, 400×400)
+const PROFILE_IMG='data:image/jpeg;base64,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';
+const PROFILE={
+  nickname:'미도리',
+  avatar:PROFILE_IMG, avatarText:'미',
+  role:'24년생 아기를 키우는 워킹맘',
+  story:'엄마와 아기가 모두 행복한 지속가능한 육아를 연구해요',
+  rules:['직접 읽고, 보고, 들어 본 것만 올려요','건강 관련 내용은 전문가 상담을 함께 권해요','협찬받은 콘텐츠는 꼭 따로 표시해요'],
+  links:[{label:'인스타그램',url:''},{label:'블로그',url:''},{label:'추천 제안하기',url:''}]
+};
+/* 프로필 버튼 + 소개 창 + 한줄평 서명 */
+// 프로필 이미지를 못 불러오면 글자(예: '미')로 대신 표시
+function avatarHTML(){return PROFILE.avatar?`<img src="${esc(PROFILE.avatar)}" alt="" onerror="this.replaceWith(document.createTextNode('${esc(PROFILE.avatarText).replace(/'/g,'')}'))">`:esc(PROFILE.avatarText);}
+function renderProfileBtn(){
+  const b=$('profileBtn'); b.innerHTML=avatarHTML();
+  b.setAttribute('aria-label',`만든 사람 소개: ${PROFILE.nickname}`);
+  b.onclick=openAbout;
+}
+// 상세 창 한줄평·꿀팁 이야기 아래에 붙는 서명
+function signature(word){return `<div class="sig"><span class="sig-av" aria-hidden="true">${avatarHTML()}</span><span>${esc(PROFILE.nickname)}의 ${word}</span></div>`;}
+function openAbout(){
+  const p=PROFILE;
+  const links=p.links.filter(l=>l.url).map((l,i)=>l.url
+    ?`<a class="${i===0?'primary':''}" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>`
+    :`<span title="데이터의 links에 주소를 넣으면 버튼이 활성화돼요">${esc(l.label)} · 주소 입력 필요</span>`).join('');
+  // 콘텐츠 수는 데이터에서 자동으로 셈
+  const counts=[['📚','권의 책',books],['🎬','편의 영화',movies],['🎓','개의 강의',courses],['▶️','개의 채널',youtube],['🧸','개의 용품',goods],['📝','개의 후기',SHOW_TIPS?blogs:[]]]
+    .filter(c=>c[2].length).map(c=>`<span>${c[0]} ${c[2].length}${c[1]}</span>`).join('');
+  lastFocus=document.activeElement;
+  $('detail').innerHTML=`<div class="about-sheet">
+      <span class="eyebrow">CURATED BY</span>
+      <div class="who"><span class="avatar">${avatarHTML()}</span><div><h2 id="detail-title">${esc(p.nickname)}</h2><small>${esc(p.role)}</small></div></div>
+      <p class="story">${esc(p.story)}</p>
+      <div class="counts">${counts}</div>
+      <h3>이런 기준으로 골라요</h3>
+      <ul>${p.rules.map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
+      ${links?`<div class="sns">${links}</div>`:''}
+    </div>`;
+  showDialog(false);
+}
+function showDialog(replace){
+  $('dialog').classList.add('open');document.body.style.overflow='hidden';$('close').focus();$('dialog').querySelector('.panel').scrollTop=0;
+  // 휴대폰 '뒤로 가기'로 닫히도록 기록 추가 (창 안에서 다른 항목으로 바꿀 때는 추가하지 않음)
+  if(!replace){try{history.pushState({sheet:1},'');}catch(e){}}
+}
+
+/* ───────── 데이터 ─────────
+   review: 직접 쓴 한줄평 (비어 있으면 '한줄평 자리'로 표시)
+   hint:   이럴 때 보세요(추천 시기·상황)
+   pick:   true면 '강력 추천' 라벨 + 목록 맨 앞에 표시
+*/
+const books=[
+ {"id": "103285142", "title": "통곡 없이 잠 잘 자는 아기의 비밀", "author": "곽윤철", "category": "수면·생활", "hint": "0~2세 수면을 고민할 때", "review": "수면교육을 왜 해야하는지 차근차근 설명해주는 책. 상황별 Q&A로 필요한 내용만 빠르게 확인 가능해요", "pick": false},
+ {"id": "126680547", "title": "임신 출산 미리보기", "author": "이재일", "category": "임신·출산", "hint": "임신과 출산을 준비할 때", "review": "유튜브 산소형제 채널로 알려진 이재일 선생님이 알려주는 임신 초기 부터 분만까지 시기별로 꼭 알아야하는 것들을 정리해뒀어요", "pick": false},
+ {"id": "128589752", "title": "0~3세 기적의 뇌과학 육아", "author": "그리어 커센바움", "category": "발달·이해", "hint": "영유아 발달을 이해하고 싶을 때", "review": "뇌과학자가 알려주는 아기 뇌발달 원리와 함께 애착 육아하는 방법을 상세하게 설명해뒀어요. 영유아 부모라면 꼭 읽어보는 것을 추천해요", "pick": true},
+ {"id": "195124365", "title": "베이비 위스퍼 골드", "author": "트레이시 호그", "category": "수면·생활", "hint": "아기의 일상 리듬을 살펴볼 때", "review": "원조 먹놀잠 'E.A.S.Y' 원칙을 알려줘요. 아기 하루 리듬을 잡는데 참고할만해요. 번역투로 잘 안읽혀서 다른 육아 기본서를 읽고 나서 읽는 것을 추천해요", "pick": false},
+ {"id": "85466721", "title": "엄마, 나는 자라고 있어요", "author": "헤티 판 더 레이트", "category": "발달·이해", "hint": "아기의 성장 변화를 살펴볼 때", "review": "우리 아기가 왜 이러나? 싶을때 보면 좋을 책. 아기 시기별 도약기에 대한 이해를 높일 수 있고 대응방법도 알려줘서 유용해요", "pick": false},
+ {"id": "125091799", "title": "우리동네 어린이병원 육아대백과", "author": "손수예", "category": "건강·돌봄", "hint": "아이의 건강 정보를 찾아볼 때", "review": "이 한권만 있으면 아기 건강, 발달 모두 한번에 체크 가능해요. 최근에 개정되어서 최신 정보가 잘 정리되어 있어서 추천해요", "pick": true},
+ {"id": "104127127", "title": "작은 변화에도 걱정이 많아지는 예비 엄마들에게", "author": "전종관", "category": "임신·출산", "hint": "임신 중 궁금한 점이 많을 때", "review": "유퀴즈에 나와 더욱 유명해지신 전종관 선생님의 걱정이 많은 임산부들을 위한 바이블! 임신하면 이 책부터 보는 것을 추천해요", "pick": false},
+ {"id": "122490906", "title": "0~24개월 잘 자는 아이의 비결", "author": "김지현", "category": "수면·생활", "hint": "영아 수면을 살펴볼 때", "review": "영유아 수면컨설팅으로 유명한 '슬베베' 책으로 아이 수면교육에 대한 실질적인 스킬을 배우는데 도움돼요", "pick": false},
+ {"id": "139734658", "title": "김수연의 아기발달 백과", "author": "김수연", "category": "발달·이해", "hint": "아기 발달을 살펴볼 때", "review": "시기별 아기 발달을 체크해볼 수 있어요. K-DST와 연계해서 체크해보면 좋아요. 이 책 덕분에 아기 대근육발달지연도 빨리 알게 되었어요", "pick": false},
+ {"id": "124472741", "title": "첫 1년 움직임의 비밀", "author": "마리안 헤름센-판 완로이", "category": "발달·이해", "hint": "첫해의 움직임 발달을 알고 싶을 때", "review": "대근육발달에 대해 상세하게 알려주는 책이에요. 아기 자세를 살피는 눈이 생겨서 추천해요", "pick": false},
+ {"id": "102486557", "title": "베이비 몬테소리 육아대백과", "author": "시모네 데이비스", "category": "몬테소리", "hint": "몬테소리 육아를 알아볼 때", "review": "첫돌까지의 일상, 집 환경, 놀이를 몬테소리 원칙으로 알려줘요. 몬테소리 교구를 들이기 전에 이 책부터 보세요", "pick": false},
+ {"id": "114679609", "title": "괜찮아, 우리도 몬테소리가 처음이야", "author": "정이비", "category": "몬테소리", "hint": "몬테소리 교육을 시작할 때", "review": "몬테소리를 집에서 실천해 본 0-3세 엄마들의 사례가 잘 정리되어 있어요. 몬테소리에 관심이 많다면 꼭 추천하는 책이에요", "pick": false},
+ {"id": "147561803", "title": "천근아의 두뇌 육아", "author": "천근아", "category": "발달·이해", "hint": "아이의 두뇌 발달을 알아볼 때", "review": "0-36개월 월령별 두뇌 발달 맞춤 육아법을 알려줘요. 0-3세 기적의 뇌과학 육아와 비슷한 톤이에요", "pick": false},
+ {"id": "115814095", "title": "돌봄과 작업", "author": "정서경", "category": "부모의 삶", "hint": "돌봄과 일을 함께 생각해 보고 싶을 때", "review": "아이를 키우며 일을 이어가는 11명의 워킹맘의 솔직한 고민과 선택을 담은 에세이예요. 여러번 읽어도 마음에 울림이 가요", "pick": false},
+ {"id": "119847141", "title": "돌봄과 작업 2", "author": "김유담", "category": "부모의 삶", "hint": "돌봄과 일을 함께 생각해 보고 싶을 때", "review": "육아와 일 사이에서 각자의 방식을 찾아가는 엄마들의 이야기예요. 모두 비슷한 고민을 하고 있다는 사실이 큰 위안이 되었어요", "pick": false},
+ {"id": "126978860", "title": "요즘 육아", "author": "곽연선", "category": "부모의 삶", "hint": "오늘의 육아를 사회적 관점에서 살펴볼 때", "review": "임신,출산, 육아가 나만 힘든가? 라는 물음에 그렇지 않다는 이유를 차근히 설명해줘요. 일과 육아, 돌봄공백까지 요즘 부모가 겪는 현실을 데이터로 설명해줘요", "pick": false},
+ {"id": "187530038", "title": "어린 나를 키우는 마음으로", "author": "김나무", "category": "부모의 삶", "hint": "아이를 키우며 자신의 마음을 돌아볼 때", "review": "육아 에세이 중 가장 따스해요. 아기를 키우며 내 어린 시절과 부모와의 관계를 다시 보게 되는 에세이예요", "pick": true},
+ {"id": "126680426", "title": "초보 부모 방탄 육아", "author": "이재현", "category": "건강·돌봄", "hint": "첫해의 육아와 건강 정보를 살펴볼 때", "review": "NICU 의사 아빠가 알려주는 0-1세에 꼭 알아야 할 건강, 안전 지식이 잘 정리되어 있어요", "pick": false},
+ {"id": "165325478", "title": "소리로 시작하는 영어 그림책", "author": "조이스 박, 배성기", "category": "교육", "hint": "영어 노출을 고민할 때", "review": "소리 발달 단계에 맞춘 영어 그림책으로 영어 노출하는 방법을 알려줘요. 영유아 영어 교육이 고민될때 도움이 돼요", "pick": false},
+ {"id": "125664850", "title": "그럼에도 육아", "author": "정지우", "category": "부모의 삶", "hint": "부모가 된다는 것을 고민할 때", "review": "따스한 시선으로 부모가 됨이 어떤 의미인지 함께 고민할 수 있는 에세이예요", "pick": false},
+ {"id": "38235781", "title": "나는 워킹맘입니다", "author": "김아연", "category": "부모의 삶", "hint": "복직을 앞두고 걱정될 때", "review": "복직을 앞둔 워킹맘이라면 무조건 읽어 봐야할 책. 회사, 가정 생활에서 도움이 될만한 꿀팁이 가득 있어요", "pick": true},
+ {"id": "141267373", "title": "베싸의 말문이 트이는 영어 육아", "author": "박정은", "category": "교육", "hint": "영어 노출 방법이 고민될 때", "review": "육아 인플루언서 베싸가 알려주는 엄마표 영어 노하우! 빠르게 훑어볼 수 있어요", "pick": false},
+ {"id": "126110769", "title": "4~7세 보고 만지는 수학은 이렇게 가르칩니다", "author": "최경희", "category": "교육", "hint": "엄마표 수학이 궁금할 때", "review": "수포자 엄마가 아이 수학 교육이 고민돼서 찾아 본 책. 쉽게 사례중심으로 되어 있어서 읽기 편했어요", "pick": false},
+ {"id": "145036024", "title": "우리 아이 언어발달", "author": "김수연", "category": "발달·이해", "hint": "아기 언어 발달이 궁금할 때", "review": "시기별 언어 발달 체크리스트와 언어 발달을 위해 부모가 해줄 수 있는 것들이 구체적으로 제시되어 좋았어요", "pick": false},
+ {"id": "125183742", "title": "뿐이 토핑 이유식", "author": "정주희", "category": "아기 식사", "hint": "이유식을 처음 시작할 때", "review": "워낙 유명한 책이라서 이유식 처음 시작할때 한 권 있으면 참고하기 좋아요. 다만 토핑 이유식을 지속할지는 부모의 선택!", "pick": false},
+ {"id": "101687655", "title": "라임맘의 실패 없는 아이주도 이유식&유아식", "author": "옥한나", "category": "아기 식사", "hint": "아기 식단이 고민일 때", "review": "부록에 재료별로 정리해둔게 아주 유용해요! 레시피가 간단해서 따라하기 편해요", "pick": false},
+ {"id": "192274401", "title": "집밥력", "author": "홀썸모먼트", "category": "아기 식사", "hint": "아기와 함께 먹는 식사 차릴 때", "review": "저당, 저염 식단을 소개하여 아기와 함께 먹는 유아식을 차릴 때 참고하기 좋아요", "pick": false}
+];
+const movies=[
+ {"tmdb": "400579", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/uF0zUz3ii163wQzfGbr9Y3k2Xqx.jpg", "title": "툴리", "original": "Tully", "year": "2018", "theme": "출산 후의 삶", "hint": "산후 우울감이 이해받고 싶을 때", "url": "https://www.themoviedb.org/movie/400579-tully?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "177945", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/t8xXK4BfP73Ar07z3O5s9Og9o6O.jpg", "title": "그렇게 아버지가 된다", "original": "Like Father, Like Son", "year": "2013", "theme": "부모가 된다는 것", "hint": "부모가 된다는 의미를 생각해 볼 때", "url": "https://www.themoviedb.org/movie/177945?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "283552", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/tv2Ts7zRGzFWc6Xz0z8mxGUbNDB.jpg", "title": "파도가 지나간 자리", "original": "The Light Between Oceans", "year": "2016", "theme": "부모와 선택", "hint": "부부와 부모에 대해 생각해 볼 때", "url": "https://www.themoviedb.org/movie/283552-the-light-between-oceans?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "122906", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/cLfuuK1Y5FjX1xXDrrEa9ppnKuy.jpg", "title": "어바웃 타임", "original": "About Time", "year": "2013", "theme": "", "hint": "평범한 하루의 소중함을 느끼고 싶을 때", "url": "https://www.themoviedb.org/movie/122906-about-time?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "505192", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/vjBjqZ4AWO0l6mMfPpd3z1Z2Oo9.jpg", "title": "어느 가족", "original": "万引き家族", "year": "2018", "theme": "", "hint": "가족이란 무엇인지 생각해 보고 싶을 때", "url": "https://www.themoviedb.org/movie/505192?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "1050035", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/yg7ry2T8EmII7WplFgk49KTw339.jpg", "title": "괴물", "original": "怪物", "year": "2023", "theme": "", "hint": "아이의 마음을 오해하고 있진 않은지 돌아볼 때", "url": "https://www.themoviedb.org/movie/1050035?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "110420", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/idjBSb5omuPwoMN7LP3mjEbSWzv.jpg", "title": "늑대아이", "original": "おおかみこどもの雨と雪", "year": "2012", "theme": "", "hint": "혼자 아이를 키우는 마음에 위로가 필요할 때", "url": "https://www.themoviedb.org/movie/110420?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "71859", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/5T9tGUUu2frmiHLQ7o9BK1r7I55.jpg", "title": "케빈에 대하여", "original": "We Need to Talk About Kevin", "year": "2011", "theme": "", "hint": "엄마라는 이름의 무게를 마주해 보고 싶을 때", "url": "https://www.themoviedb.org/movie/71859-we-need-to-talk-about-kevin?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "492188", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/wpQl0jJp2vZ77eQ4m1Y4tuP9jF3.jpg", "title": "결혼 이야기", "original": "Marriage Story", "year": "2019", "theme": "", "hint": "부부 관계를 차분히 돌아보고 싶을 때", "url": "https://www.themoviedb.org/movie/492188-marriage-story?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "150540", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/rMXHvHzpuYZXrJUhRVJ3TvDSwe5.jpg", "title": "인사이드 아웃", "original": "Inside Out", "year": "2015", "theme": "", "hint": "아이의 감정을 이해하고 싶을 때", "url": "https://www.themoviedb.org/movie/150540-inside-out?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "157336", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/gDN2NWtHbs8ZWEBQM8Dh5OVXdb4.jpg", "title": "인터스텔라", "original": "Interstellar", "year": "2014", "theme": "", "hint": "부모와 아이 사이의 시간을 생각해 볼 때", "url": "https://www.themoviedb.org/movie/157336-interstellar?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "4148", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/eD3KCNkA2WM4zkGnjMK74eW7B9D.jpg", "title": "레볼루셔너리 로드", "original": "Revolutionary Road", "year": "2008", "theme": "", "hint": "결혼과 나의 꿈 사이에서 흔들릴 때", "url": "https://www.themoviedb.org/movie/4148-revolutionary-road?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "154385", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/hsTjJyTBAxY5LwGBki2tzkv0dd9.jpg", "title": "성난 사람들", "original": "BEEF", "year": "2023", "theme": "", "hint": "쌓인 분노와 지친 마음을 돌아볼 때", "url": "https://www.themoviedb.org/tv/154385-beef?language=ko", "review": "", "kind": "드라마"},
+ {"tmdb": "396292", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/8stTLVktSAATgFdCeaEUSh6WU2j.jpg", "title": "앨리 웡: 베이비 코브라", "original": "Ali Wong: Baby Cobra", "year": "2016", "theme": "", "hint": "임신·육아 이야기로 크게 웃고 싶을 때", "url": "https://www.themoviedb.org/movie/396292-ali-wong-baby-cobra?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "518045", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/kMIPAhukW76looUtyZlrpWjwdgH.jpg", "title": "앨리 웡: 성性역은 없다", "original": "Ali Wong: Hard Knock Wife", "year": "2018", "theme": "", "hint": "육아 현실을 웃음으로 털어 내고 싶을 때", "url": "https://www.themoviedb.org/movie/518045-ali-wong-hard-knock-wife?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "581958", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/uQa9lkX1fYCpsG5Uq8ONOsqlbQw.jpg", "title": "에이미 슈머: 성장 코미디", "original": "Amy Schumer: Growing", "year": "2019", "theme": "", "hint": "임신 중의 현실을 웃으며 공감하고 싶을 때", "url": "https://www.themoviedb.org/movie/581958-amy-schumer-growing?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "69555", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/1TJkVKx7IeLadTFxOpUN3QEGI7Z.jpg", "title": "워킹맘 다이어리", "original": "Workin' Moms", "year": "2017", "theme": "", "hint": "복직 후 워킹맘의 현실에 공감하고 싶을 때", "url": "https://www.themoviedb.org/tv/69555-workin-moms?language=ko", "review": "", "kind": "드라마"},
+ {"tmdb": "111292", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/whKwjM5hwCcFsKwBvRvTVVGr5BB.jpg", "title": "산후조리원", "original": "", "year": "2020", "theme": "", "hint": "출산 직후 조리원 생활이 궁금할 때", "url": "https://www.themoviedb.org/tv/111292?language=ko", "review": "", "kind": "드라마"},
+ {"tmdb": "105961", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/b4Gvr5G8tJ69UhOemjB85rxcTRq.jpg", "title": "겨우, 서른", "original": "三十而已", "year": "2020", "theme": "", "hint": "결혼과 일의 고민이 많을 때", "url": "https://www.themoviedb.org/tv/105961?language=ko", "review": "", "kind": "드라마"},
+ {"tmdb": "99103", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/m0Ch3aClC2qY82lzZ56Jnc2jDCT.jpg", "title": "베이비스: 눈부신 첫해", "original": "Babies", "year": "2020", "theme": "", "hint": "첫 1년 아기 발달의 신비를 보고 싶을 때", "url": "https://www.themoviedb.org/tv/99103-babies?language=ko", "review": "", "kind": "다큐"},
+ {"tmdb": "75297", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/kTG4W8IzKvsJshBVaN2aYfhGrfB.jpg", "title": "렛다운", "original": "The Letdown", "year": "2016", "theme": "", "hint": "초보 엄마의 서툰 날들에 공감하고 싶을 때", "url": "https://www.themoviedb.org/tv/75297-the-letdown?language=ko", "review": "", "kind": "드라마"},
+ {"tmdb": "239017", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/tL1eC3u7MO7PzDqFhEeAkZZYfO5.jpg", "title": "결혼까진 했는데...요!", "original": "童話故事下集", "year": "2025", "theme": "", "hint": "결혼의 의미를 가볍게 돌아볼 때", "url": "https://www.themoviedb.org/tv/239017?language=ko", "review": "", "kind": "드라마"},
+ {"tmdb": "804095", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/zcpxI4YYFXd2aS1wffa5usKFFbq.jpg", "title": "파벨만스", "original": "The Fabelmans", "year": "2022", "theme": "", "hint": "부모의 꿈과 아이의 꿈 사이를 생각해 볼 때", "url": "https://www.themoviedb.org/movie/804095-the-fabelmans?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "394117", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/nwSrKv3tzo4HqkgMj3ZwfAC4VYT.jpg", "title": "플로리다 프로젝트", "original": "The Florida Project", "year": "2017", "theme": "", "hint": "아이의 눈으로 세상을 바라보고 싶을 때", "url": "https://www.themoviedb.org/movie/394117-the-florida-project?language=ko", "review": "", "kind": "영화"},
+ {"tmdb": "2517", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/vAO1YIM3TzeKOJr4DVxvKHuND2w.jpg", "title": "아무도 모른다", "original": "誰も知らない", "year": "2004", "theme": "", "hint": "아이에게 어른의 돌봄이 얼마나 필요한지 돌아볼 때", "url": "https://www.themoviedb.org/movie/2517?language=ko", "review": "", "kind": "영화"}
+];
+const courses=[
+ {"title": "AMI 몬테소리 0–3세 오리엔테이션", "provider": "AMI Montessori Center Korea", "theme": "0–3세 교육 · 교사 과정", "hint": "육아휴직 중 깊이 있게 육아 공부하고 싶을 때", "url": "https://www.ami-korea.net/diploma-course", "info": "", "review": ""},
+ {"title": "영어그림책지도사", "provider": "글로벌사이버대학교", "theme": "영어그림책 · 민간자격 과정", "hint": "엄마표 영어가 궁금할 때", "url": "https://btcenter.global.ac.kr/popup/220413.asp", "info": "", "review": ""}
+];
+/* 유튜브 채널
+   url:    채널 주소 (https://www.youtube.com/@핸들)
+   title:  채널 이름 / handle: @핸들 / avatar: 채널 프로필 이미지 주소
+   about:  채널 소개 한두 문장 (직접 요약) / medical: true면 건강 안내 문구 표시
+   ※ 채널 이름·프로필 이미지는 2026-10-01에 각 채널 페이지에서 확인한 값
+   ※ theme·hint는 예시 문구 → 직접 수정 */
+const youtube=[
+ {"url": "https://www.youtube.com/@o2brothersTV", "title": "산소형제TV", "handle": "@o2brothersTV", "avatar": "https://yt3.googleusercontent.com/6-X6m48LPJqUfqQQVjEFEyPNOLB8NWsNNxMWwpeae8xgeQ5MM50jPyPTzBp_vA5jaY7nurlksnE=s240-c-k-c0x00ffffff-no-rj", "theme": "임신·출산 · 아이 건강", "hint": "아이 건강이 걱정될 때 의사의 설명을 듣고 싶을 때", "about": "산부인과·소아과 전문의 형제가 육아와 아이 건강 이야기를 쉽게 풀어 주는 채널이에요.", "medical": true, "review": ""},
+ {"url": "https://www.youtube.com/@dr.ko_pediatric_pt", "title": "고박사의 미국소아물리치료", "handle": "@dr.ko_pediatric_pt", "avatar": "https://yt3.googleusercontent.com/ixGeE4gLt4rTWcr_v2bIyaSlTqf7TFhiI8iDkdxoYLDfh8wj2KGfKaJuercfjy-OvHDAUfHB=s240-c-k-c0x00ffffff-no-rj", "theme": "대근육 발달 · 놀이 운동", "hint": "뒤집기·기기·걷기 발달이 궁금할 때", "about": "소아 물리치료사가 집에서 따라 할 수 있는 놀이식 운동과 대근육 발달 이야기를 알려 주는 채널이에요.", "medical": true, "review": ""},
+ {"url": "https://www.youtube.com/@%ED%95%98%EC%A0%95%ED%9B%88%EC%9D%98%EC%82%90%EB%BD%80%EC%82%90%EB%BD%80119%EC%86%8C", "title": "하정훈의 삐뽀삐뽀 119", "handle": "@하정훈의삐뽀삐뽀119소", "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_l7w-A0kB7-I22WePYZSzeJ0fJp84qw8WGUop8xNWeoh0w=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "아이가 아플 때 소아과 의사의 설명이 필요할 때", "about": "", "medical": false, "review": ""},
+ {"url": "https://www.youtube.com/@horme_montessori", "title": "호르메몬테소리", "handle": "@horme_montessori", "avatar": "https://yt3.googleusercontent.com/kKWFlZ5FEPFzfAHiLpT2MWHQciK7ivcVE37V9DNuaLu3y7XYWx8nFT1f-bwpLJl5yuueoeo-=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "집에서 몬테소리 환경을 꾸며 보고 싶을 때", "about": "", "medical": false, "review": ""}
+];
+
+/* 꿀팁: 직접 쓰는 글
+   topic: 주제 / icon: 주제 아이콘 / title: 카드 제목 / points: 핵심 체크리스트
+   body:  자세한 이야기 (비어 있으면 '이야기 자리'로 표시) / fact: 제도·검사 등 확인된 정보 요약
+   sources: 공식 출처 [{label,url}] / updated: 기준일 / medical: 건강 안내 문구 표시
+   related: 함께 보면 좋은 콘텐츠 [{kind:'books',id} | {kind:'youtube',handle}] */
+const tips=[
+ {"topic": "육아휴직 시간관리", "icon": "⏰", "title": "전날 쓰는 플래너와 낮잠 시간, 휴직 중 내 시간 만들기", "points": ["전날 밤, 다음 날 플래너를 미리 써 둔다", "아이 낮잠 시간을 나를 위한 시간으로 쓴다"], "body": "", "fact": "", "updated": "2026-10", "medical": false, "review": "", "origin": "", "sources": [], "related": []},
+ {"topic": "대근육 발달", "icon": "🤸", "title": "터미타임과 K-DST로 대근육 발달 골든타임 챙기기", "points": ["터미타임(깨어 있을 때 엎드려 놀기)이 왜 중요한지 알아 둔다", "K-DST로 아이의 발달 상황과 골든타임을 확인한다"], "body": "", "fact": "K-DST(한국 영유아 발달선별검사)는 생후 9개월(3차 검진) 이후 영유아 건강검진에서 부모가 작성하는 발달선별검사예요. 결과에서 심화평가가 권고되면 발달 정밀검사비 지원을 받을 수 있어요.", "updated": "2026-10", "medical": true, "review": "", "origin": "", "sources": [{"label": "국민건강보험공단 · 발달선별검사지 안내", "url": "https://www.nhis.or.kr/nhis/healthin/wbhaca05000m01.do"}], "related": [{"kind": "books", "id": "124472741"}, {"kind": "youtube", "handle": "@dr.ko_pediatric_pt"}]},
+ {"topic": "워킹맘 · AI 활용", "icon": "🤖", "title": "출근 전 10분, 복직한 워킹맘의 AI 실무 공부법", "points": ["AI 실무 사례 뉴스레터(요즘IT, Daily Prompt 등)를 구독하고 출근 전 10분 훑어보며 쓸 만한 글의 URL을 모은다", "모은 URL을 클로드에게 주고 '내 직무 입장에서 적용할 만한 내용'으로 요약해 달라고 한다", "'내가 해 볼 만한 예시 프롬프트를 짜줘'로 바로 따라 해 보고, 나중에 볼 것은 노션에 정리해 달라고 한다", "반복되는 일은 '자동화할 수 있는지' 물어본다 (예: 주 1회 사례를 모아 주는 리서치 에이전트)"], "body": "복직 두 달 차, 육아와 일로 시간이 정말 부족해서 겉핥기로라도 빠르게 익히는 걸 목표로 했어요. 출근 전 10분만 투자해도 실무에 써 볼 만한 사례를 하나씩 건질 수 있었어요. 하나하나 정독하기 어려워서 요약까지 AI에게 맡겼고, 자동화 에이전트는 방법을 자세히 들었지만 아직은 복잡해서 다음 과제로 남겨 뒀어요.", "fact": "클로드가 노션에 바로 정리하게 하려면 클로드와 노션을 커넥터로 연결해야 해요. 연결 방법은 클로드 설정의 커넥터 메뉴에서 안내해요.", "updated": "2026-10", "medical": false, "review": "", "origin": "", "sources": [], "related": []}
+];
+
+/* 꿀팁 탭: 시트 '블로그' 탭의 블로그 글 (제목·썸네일·작성일은 블로그 주소를 보고 채워 둠) */
+const blogs=[
+ {"url": "https://blog.naver.com/midori_777/224396576295", "title": "워킹맘 복직 1개월 솔직 후기", "hint": "복직 후기가 궁금할 때", "thumb": "https://blogthumb.pstatic.net/MjAyNjA4MzFfMjUz/MDAxNzg4MTgyNTEzMzAx.bV5zcG1bhf8Cd-7TLwoIS18US_CmpBHW3OafRsxGGFkg.T_M4dUABM2qTJRI4tUs9AMlOEjndIMhvmgI_E7Z7E-wg.JPEG/IMG%A3%DF4546.JPG?type=w2", "date": "2026.08.31", "topic": "부모의 삶"},
+ {"url": "https://blog.naver.com/midori_777/224225882995", "title": "전집 구입 꿀팁", "hint": "아기 전집을 고민할 때", "thumb": "https://blogthumb.pstatic.net/MjAyNjAzMjJfMTc1/MDAxNzc0MTg4MjIzMTEz.zg2hXuYYtjN6W-QmEXJ97QVuv1e99TNJuPEUA8a2ISIg.MLaCBVil1W064lMMHEZPEZEd2IaU8Vikf6N9lGvDwkMg.JPEG/output%A3%DF2866074720.jpg?type=w2", "date": "2026.03.22", "topic": ""}
+];
+/* 용품 탭: 시트 '용품' 탭의 블로그 글 (꿀팁 탭과 같은 카드) */
+const goods=[
+ {"url": "https://blog.naver.com/midori_777/224243169659", "title": "푸쉬카 VS 전동차 비교", "hint": "어떤 푸쉬카 사주면 좋을지 고민될 때", "thumb": "https://blogthumb.pstatic.net/MjAyNjA0MDZfMzQg/MDAxNzc1NDgwNTU0Njc1.KtAPcdc3299DmbkwwCSXuMYqod4MuajFgUT6n11aJ4wg.-iOkMKX9fFGGpHSfo5DhfB3wJQCOUzxMdNSbZY1TLBgg.JPEG/IMG%A3%DF9487.JPG?type=w2", "date": "2026.04.06", "topic": ""},
+ {"url": "https://blog.naver.com/midori_777/224176533177", "title": "자동차 놀잇감 추천", "hint": "장거리 여행 떠날 때", "thumb": "https://blogthumb.pstatic.net/MjAyNjAyMDhfMTU3/MDAxNzcwNTU3MjY3MjQy.tJSU9A9dw_C0abKhkmc3ZnXc83_EvZGY0U2VrSvCvtYg.zvOlL8i7omY9HwBhoR7-CxWR6fHFrkM51KwOmeqfHt0g.JPEG/IMG%A3%DF7791.JPG?type=w2", "date": "2026.02.08", "topic": ""},
+ {"url": "https://blog.naver.com/midori_777/224080874549", "title": "파타고니아 아기 패딩", "hint": "아기 겨울 패딩이 고민될 때", "thumb": "https://blogthumb.pstatic.net/MjAyNTExMTlfMTMx/MDAxNzYzNTE3MjcyODA5.riPLUEIiiVsCEqgxBY7stvGg__-isbd1LqGgndLXg1og.vSKL6IkRLLZyajzJ9Udt47DhxSrLbUqBPvF0Jm1mzuwg.JPEG/IMG%A3%DF4132.JPG?type=w2", "date": "2025.11.19", "topic": ""},
+ {"url": "https://blog.naver.com/midori_777/224072804869", "title": "오니츠카타이거 아기 신발", "hint": "걸음마 신발이 고민될 때", "thumb": "https://blogthumb.pstatic.net/MjAyNTExMTFfMTIy/MDAxNzYyODY1ODczNzk3.qr7g2FCGdyzAnwkESfzQ7WeWAB3oyHNvEHGjmJxODeAg.MWspqHSiA3y4hyOGdY3tHe--so988n9LkbXX9RINxT4g.JPEG/IMG%A3%DF3759.JPG?type=w2", "date": "2025.11.11", "topic": ""},
+ {"url": "https://blog.naver.com/midori_777/223967873302", "title": "도들 이유식 식기", "hint": "자기주도 이유식을 고민할 때", "thumb": "https://blogthumb.pstatic.net/MjAyNTA4MTJfOSAg/MDAxNzU0OTc0NTQ0Nzgx.VIwNMit4Rn5nQQ3mRvdLDMbg-w7FAUIUc-PWKcr8EOUg.GFabqxpp9TuGDwCL75cZKV6pkgxaI3fzF2pCCA_JaUAg.JPEG/IMG%A3%DF8154.JPG?type=w2", "date": "2025.08.12", "topic": ""},
+ {"url": "https://blog.naver.com/midori_777/223740349519", "title": "이유식 용품 모음", "hint": "이유식을 처음 시작할 때", "thumb": "https://blogthumb.pstatic.net/MjAyNTAxMjdfMTIw/MDAxNzM3OTY0NDU4NDUz.f2Np2eJv1vpuHG5Od8jMHHkgpJ2mBkBmgSwifRYG-9sg.-3g8h6R_4TNRKvPa985gZyb2yBVptpOQxX7ERoD7ySkg.JPEG/IMG_9494.JPG?type=w2", "date": "2025.01.27", "topic": ""},
+ {"url": "https://blog.naver.com/midori_777/224096033921", "title": "숲소리 장난감", "hint": "돌 아기 장난감 고민될 때", "thumb": "https://blogthumb.pstatic.net/MjAyNTEyMDJfMTA0/MDAxNzY0NjgwNjAzOTQw.flPplhnXD1RlE5zJaUp6HMwIISITCjeck71-A6i_O84g.6Da397Lob27YyxUGU5aNAMvyvCxj9yVlQSGjgkWkeBkg.JPEG/IMG%A3%DF3882.JPG?type=w2", "date": "2025.12.02", "topic": ""}
+];
+
+const TABS=[
+ // 탭 순서: 도서 · 영화 · 용품 · 학습 · 후기 (key는 내부 이름이라 그대로 둠: tips = 후기)
+ {key:'books',label:'📚 도서',items:books,unit:'권의 도서',source:'도서 표지 및 상품 정보 출처: YES24 · 표지를 누르면 자세한 정보를 볼 수 있어요.'},
+ {key:'movies',label:'🎬 영화',items:movies,unit:'편의 영화·드라마',source:'영화 정보와 포스터 출처: TMDB · This product uses the TMDB API but is not endorsed or certified by TMDB.'},
+ {key:'goods',label:'🧸 용품',items:goods,unit:'개의 용품 이야기',source:'직접 써 본 육아용품 블로그 글이에요 · 카드를 누르면 네이버 블로그에서 열려요.'},
+ // 학습: 시트의 유튜브 탭 + 강의 탭을 사이트에서만 한 탭으로 묶음 (_kind로 구분)
+ {key:'study',label:'🎓 학습',get items(){return [...youtube.map(y=>({...y,_kind:'youtube'})),...courses.map(c=>({...c,_kind:'courses'}))];},
+  unit:'개의 학습 자료',source:'유튜브 영상은 유튜브에서 열려요 · 강의 모집 일정과 비용은 각 운영기관 공식 페이지에서 확인하세요.'},
+ {key:'tips',label:'📝 후기',items:blogs,unit:'개의 후기',source:'직접 경험을 바탕으로 쓴 블로그 글이에요 · 카드를 누르면 네이버 블로그에서 열려요.'}
+];
+// 꿀팁 탭 보이기 (false로 바꾸면 숨김)
+const SHOW_TIPS=true;
+if(!SHOW_TIPS){const i=TABS.findIndex(t=>t.key==='tips');if(i>=0)TABS.splice(i,1);}
+// 주제 필터: 책에 실제로 쓰인 주제로 버튼을 만듦 (시트에서 새 주제를 쓰면 버튼이 자동으로 생김)
+const CAT_ICON={'임신·출산':'🤰','수면·생활':'🌙','발달·이해':'🌱','건강·돌봄':'🩺','몬테소리':'🧩','부모의 삶':'💬','교육':'✏️','아기 식사':'🥣'};
+const CAT_ORDER=Object.keys(CAT_ICON);
+let CATS=['전체'];
+function buildCats(){
+  const used=[...new Set(books.map(b=>b.category).filter(Boolean))];
+  used.sort((a,b)=>{const ia=CAT_ORDER.indexOf(a),ib=CAT_ORDER.indexOf(b);return (ia<0?99:ia)-(ib<0?99:ib)||a.localeCompare(b,'ko');});
+  CATS=['전체',...used.map(c=>`${CAT_ICON[c]||'📗'} ${c}`)];
+  if(!CATS.includes(cat))cat='전체';
+}
+const MEDICAL=['임신·출산','건강·돌봄','수면·생활'];
+const ICON={books:'📚',movies:'🎬',courses:'🎓',youtube:'▶️',study:'🎓',tips:'📝',goods:'🧸'};
+// 학습 탭 안의 구분: all | youtube | courses
+let studyKind='all';
+// 영화 탭 안의 분류: 시트 '분류' 칸 (비어 있으면 TMDB 주소로 판단: TV → 드라마, 그 외 → 영화)
+const MOVIE_KINDS=['영화','다큐','드라마'];
+const MOVIE_ICON={'영화':'🎬','다큐':'🌏','드라마':'📺'};
+const MOVIE_EN={'영화':'FILM','다큐':'DOCUMENTARY','드라마':'SERIES'};
+const mKind=m=>MOVIE_KINDS.includes(m.kind)?m.kind:(m.tv?'드라마':'영화');
+let movieKind='전체';
+
+let tab='books', cat='전체', q='';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s||'').toLowerCase().replace(/\s+/g,'');
+const catName=c=>c.replace(/^\S+\s/,'');
+
+function matches(it){
+  if(!q) return true;
+  const hay=norm([it.title,it.author,it.original,it.provider,it.handle,it.about,it.topic,(it.points||[]).join(' '),it.fact,it.body,it.category,it.theme,it.hint,it.review].join(' '));
+  return hay.includes(norm(q));
+}
+// 접속(새로고침)할 때마다 새로 뽑는 숫자와 콘텐츠를 섞어 만든 값 → 들어올 때마다 순서가 바뀜
+// (한 번 접속한 동안에는 탭·필터를 바꿔도 순서가 유지됨)
+const VISIT=Math.random().toString(36).slice(2);
+function dailyKey(it){
+  const s=VISIT+'|'+(it.id||it.tmdb||it.url||it.title||'');
+  let h=2166136261;
+  for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619);}
+  return h>>>0;
+}
+function current(){
+  const t=TABS.find(x=>x.key===tab);
+  // 도서·영화·용품·후기: 접속할 때마다 랜덤, 강력 추천은 항상 맨 앞(강력 추천끼리도 섞음)
+  // 학습 탭은 시트의 순서 그대로
+  let items=t.items.filter(matches);
+  if(tab==='books'||tab==='movies'||tab==='goods'||tab==='tips'){
+    items=items.slice().sort((a,b)=>((b.pick?1:0)-(a.pick?1:0))||(dailyKey(a)-dailyKey(b)));
+  }
+  if(tab==='books' && cat!=='전체'){
+    items=items.filter(b=>b.category===catName(cat));
+  }
+  if(tab==='study' && studyKind!=='all'){
+    items=items.filter(it=>it._kind===studyKind);
+  }
+  if(tab==='movies' && movieKind!=='전체'){
+    items=items.filter(it=>mKind(it)===movieKind);
+  }
+  return {t,items};
+}
+
+function renderTabs(){
+  $('tabs').innerHTML=TABS.map(t=>{
+    const n=t.items.filter(matches).length;
+    // 이모지와 글자를 따로 감싸서 세로 가운데를 맞춤 (디자인 가이드 ⑦ 탭 메뉴)
+    const [ico,...rest]=t.label.split(' ');
+    return `<button role="tab" type="button" data-k="${t.key}" aria-selected="${t.key===tab}" aria-controls="list" tabindex="${t.key===tab?0:-1}"><span class="tab-ico tab-ico-${t.key}" aria-hidden="true">${ico}</span><span class="tab-txt">${rest.join(' ')}</span>${q?`<span class="n">${n}</span>`:''}</button>`;
+  }).join('');
+  // QA: 다시 그린 뒤에도 키보드 포커스가 사라지지 않도록 같은 버튼에 포커스를 되돌림
+  $('tabs').querySelectorAll('button').forEach(b=>b.onclick=()=>{tab=b.dataset.k;cat='전체';studyKind='all';movieKind='전체';render();$('tabs').querySelector(`[data-k="${tab}"]`).focus();});
+  // 선택된 탭이 화면 밖이면 보이도록 이동 + 넘침 여부에 따라 흐림 효과
+  const nav=$('tabs'), cur=nav.querySelector('[aria-selected="true"]');
+  const syncMore=()=>{const over=nav.scrollWidth>nav.clientWidth+1;nav.classList.toggle('more',over);nav.classList.toggle('end',over&&nav.scrollLeft+nav.clientWidth>=nav.scrollWidth-2);};
+  if(cur){const l=cur.offsetLeft-nav.offsetLeft, r=l+cur.offsetWidth; if(r>nav.scrollLeft+nav.clientWidth||l<nav.scrollLeft) nav.scrollLeft=Math.max(0,r-nav.clientWidth+24);}
+  syncMore(); nav.onscroll=syncMore;
+  // QA: 좌우 화살표로 탭 이동
+  $('tabs').onkeydown=e=>{
+    if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;
+    const i=TABS.findIndex(t=>t.key===tab), n=(i+(e.key==='ArrowRight'?1:-1)+TABS.length)%TABS.length;
+    tab=TABS[n].key;cat='전체';studyKind='all';movieKind='전체';render();$('tabs').querySelector(`[data-k="${tab}"]`).focus();e.preventDefault();
+  };
+}
+function renderFilters(){
+  const f=$('filters');
+  f.classList.toggle('hidden',tab!=='books'&&tab!=='study'&&tab!=='movies');
+  f.classList.toggle('seg',tab==='study');
+  if(tab==='movies'){
+    // 영화 탭: 시트의 '분류'(영화·다큐·드라마)로 버튼을 만듦. 콘텐츠가 있는 분류만 보임
+    const used=MOVIE_KINDS.filter(k=>movies.some(m=>mKind(m)===k));
+    const opts=['전체',...used];
+    if(!opts.includes(movieKind))movieKind='전체';
+    f.innerHTML=opts.map(k=>`<button type="button" data-mk="${k}" aria-pressed="${k===movieKind}">${k==='전체'?k:`${MOVIE_ICON[k]} ${k}`}</button>`).join('');
+    f.querySelectorAll('button').forEach(b=>b.onclick=()=>{movieKind=b.dataset.mk;render();$('filters').querySelector(`[data-mk="${movieKind}"]`).focus();});
+    return;
+  }
+  if(tab==='study'){
+    // 공부 탭: 전체 / 유튜브 / 강의 선택 버튼
+    const all=TABS.find(t=>t.key==='study').items.filter(matches);
+    const opts=[['all','전체',all.length],['youtube','유튜브',all.filter(x=>x._kind==='youtube').length],['courses','강의',all.filter(x=>x._kind==='courses').length]];
+    f.innerHTML=opts.map(([k,l,n])=>`<button type="button" data-sk="${k}" aria-pressed="${k===studyKind}">${l} <span class="seg-n">${n}</span></button>`).join('');
+    f.querySelectorAll('button').forEach(b=>b.onclick=()=>{studyKind=b.dataset.sk;render();$('filters').querySelector(`[data-sk="${studyKind}"]`).focus();});
+    return;
+  }
+  buildCats();
+  f.innerHTML=CATS.map(c=>`<button type="button" aria-pressed="${c===cat}">${c}</button>`).join('');
+  f.querySelectorAll('button').forEach((b,i)=>b.onclick=()=>{cat=CATS[i];render();$('filters').querySelectorAll('button')[i].focus();});
+}
+
+function bookCard(b){
+  return `<button class="book${b.pick?' pick':''}" type="button" data-id="${b.id}">
+    <div class="cover-frame">
+      <span class="cover"><img src="https://image.yes24.com/goods/${b.id}/L" srcset="https://image.yes24.com/goods/${b.id}/L 270w, https://image.yes24.com/goods/${b.id}/XL 810w" sizes="(max-width:780px) 45vw, 200px" width="270" height="400" alt="${esc(b.title)} 표지" loading="lazy" data-fallback="${esc(b.title)}"></span>
+    </div>
+    <span class="pick-label">${b.pick?'강력 추천':''}</span>
+    <span class="meta">${[b.category,b.author].filter(Boolean).map(esc).join(' · ')}</span>
+    <span class="title">${esc(b.title)}</span>
+    <span class="b-review">${b.review?esc(b.review):''}</span>
+    <span class="hint">${b.hint?esc(b.hint):''}</span>
+  </button>`;
+}
+function mediaCard(it,i){
+  let art='';
+  if(tab==='movies') art=`<div class="media-art art-${i%3+1}">
+      ${it.poster?`<img src="${esc(it.poster)}" alt="${esc(it.title)} 포스터" loading="lazy" data-hide>`:''}
+      <span class="tag">🎬 ${it.tv?'SERIES':'FILM'} / ${esc(it.year)}</span><span class="orig">${esc(it.original)}</span></div>`;
+  else if(tab==='courses') art=`<div class="media-art art-c${i%2+1}">
+      <span class="tag">🎓 COURSE / 0${i+1}</span><span class="big-ico">${i%2?'📖':'🧩'}</span></div>`;
+  else art=`<div class="media-art yt-art yt-${i%2+1}">
+      <span class="tag">▶ YOUTUBE</span>
+      <span class="yt-avatar"><span class="yt-ph" aria-hidden="true">▶</span><img src="${esc(it.avatar)}" alt="${esc(it.title)} 채널 프로필" loading="lazy" onerror="this.remove()"></span>
+      <span class="yt-handle">${esc(it.handle)}</span></div>`;
+  const sub=tab==='courses'?[it.provider,it.theme].filter(Boolean).join(' · '):(it.theme||'');
+  return `<button class="media-card" type="button" data-i="${i}">${art}
+    <div class="media-copy">
+      <b>${esc(it.title)}</b>${sub?`<small>${esc(sub)}</small>`:''}${it.hint?`<span class="hint" style="display:block">💡 ${esc(it.hint)}</span>`:''}</div></button>`;
+}
+
+// 공부: 유튜브·강의를 같은 모양의 가로 카드로. 왼쪽 동그라미에 유튜브는 채널 프로필, 강의는 주제 아이콘
+function courseIcon(it){
+  const s=`${it.title||''} ${it.theme||''}`;
+  return /몬테소리/.test(s)?'🧩':/영어|그림책/.test(s)?'📖':/수면/.test(s)?'🌙':/요리|이유식|식사/.test(s)?'🥣':'🎓';
+}
+function studyCard(it,i){
+  const yt=it._kind==='youtube';
+  const circle=yt
+    ?`<span class="s-circle yt"><span class="s-ph" aria-hidden="true">▶</span>${it.avatar?`<img src="${esc(it.avatar)}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`
+    :`<span class="s-circle course" aria-hidden="true">${courseIcon(it)}</span>`;
+  const sub=yt?[it.handle,it.theme].filter(Boolean).join(' · '):[it.provider,it.theme].filter(Boolean).join(' · ');
+  // 상세 창 없이 유튜브 채널·운영기관 페이지로 바로 이동 (새 창)
+  const tag=it.url?`a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer"`:'div';
+  const end=it.url?'a':'div';
+  return `<${tag} class="study-card" aria-label="${esc(it.title)} ${yt?'유튜브 채널':'강의 페이지'} 새 창으로 열기">${circle}
+    <span class="s-body"><span class="s-kind ${yt?'yt':''}">${yt?'YOUTUBE':'COURSE'}</span><b>${esc(it.title)}</b>${sub?`<small>${esc(sub)}</small>`:''}${it.hint?`<span class="hint">${esc(it.hint)}</span>`:''}</span>${it.url?'<span class="s-go" aria-hidden="true">↗</span>':''}</${end}>`;
+}
+// 영화·드라마: 포스터 + '이럴 때 보세요'만. 상세 창과 외부 링크 없음 (한줄평은 1차 버전에서 쓰지 않음)
+function movieCard(it){
+  const art=it.poster
+    ?`<img class="m-poster" src="${esc(it.poster)}" alt="${esc(it.title)} 포스터" loading="lazy" onerror="this.outerHTML='<div class=&quot;m-poster m-fallback&quot;>🎬<span>${esc(it.title).replace(/'/g,'&#39;')}</span></div>'">`
+    :`<div class="m-poster m-fallback">🎬<span>${esc(it.title)}</span></div>`;
+  const kind=[MOVIE_EN[mKind(it)],it.year].filter(Boolean).join(' · ');
+  const text=`<p class="m-hint">${it.hint?esc(it.hint):''}</p>`;
+  return `<article class="m-card">${art}<span class="m-kind">${esc(kind)}</span><b class="m-title">${esc(it.title)}</b>${text}</article>`;
+}
+function tipCard(it,i){
+  return `<button class="media-card tip-card" type="button" data-i="${i}">
+    <div class="tip-top"><span class="tip-icon" aria-hidden="true">${esc(it.icon)}</span><span class="tip-topic">${esc(it.topic)}</span></div>
+    <b>${esc(it.title)}</b>
+    <ul class="tip-points">${it.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
+    <div class="tip-foot"><span>${fmtMonth(it.updated)}</span>${it.sources.length?'<span>📎 공식 출처</span>':''}${it.medical?'<span>🩺 건강 정보</span>':''}</div>
+  </button>`;
+}
+// 꿀팁: 블로그 글 큰 썸네일 카드. 상세 창 없이 블로그로 바로 이동 (새 창)
+// 썸네일을 못 불러올 때 보여 줄 브랜드 이미지 (640x400, 원본: thumbs/fallback.jpg)
+const BLOG_FALLBACK='data:image/jpeg;base64,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';
+// 썸네일 불러오는 순서: ① 우리 사이트에 저장한 작은 사진(thumbs/글번호.jpg, 약 45KB)
+// → ② 네이버 원본 썸네일(약 125KB) → ③ 브랜드 대체 이미지(파일 안에 들어 있어 항상 보임)
+function blogThumbError(img){
+  const step=+(img.dataset.step||0)+1; img.dataset.step=step;
+  if(step===1&&img.dataset.naver){img.src=img.dataset.naver;return;}
+  img.onerror=null; img.src=BLOG_FALLBACK;
+}
+function blogCard(it){
+  const no=(String(it.url).match(/(\d{9,})/)||[])[1];
+  const first=no?`thumbs/${no}.jpg`:(it.thumb||BLOG_FALLBACK);
+  const thumb=`<img src="${esc(first)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-naver="${no?esc(it.thumb||''):''}" onerror="blogThumbError(this)">`;
+  return `<a class="blog-card" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(it.title)} 블로그 글 새 창으로 열기">
+    <span class="blog-thumb">${thumb}</span>
+    <span class="blog-body"><span class="blog-kind">NAVER BLOG</span><b>${esc(it.title)}</b>${it.hint?`<span class="hint">${esc(it.hint)}</span>`:''}
+      <span class="blog-foot"><span class="date">${esc(it.date)}</span><span class="go">블로그에서 읽기 ↗</span></span></span></a>`;
+}
+function emptyState(t){
+  if(!t.items.length) return `<div class="empty"><span class="big">${ICON[tab]}</span><strong>곧 채워질 예정이에요</strong><p>좋았던 ${t.label.replace(/^\S+\s/,'')} 추천을 준비하고 있어요.<br>그동안 다른 추천을 둘러보세요.</p>${suggestions()}</div>`;
+  // QA: 주제 필터 때문에 결과가 0개인 경우 → 전체에서 보기 안내
+  if(q && tab==='books' && cat!=='전체' && t.items.some(matches)){
+    const n=t.items.filter(matches).length;
+    return `<div class="empty"><span class="big">🔎</span><strong>‘${esc(catName(cat))}’ 주제에는 ‘${esc(q)}’ 결과가 없어요</strong><p>전체 주제에서는 ${n}권을 찾았어요.</p><button type="button" class="reset" data-reset>전체 주제에서 보기</button></div>`;
+  }
+  if(q) return `<div class="empty"><span class="big">🔎</span><strong>‘${esc(q)}’에 맞는 결과가 없어요</strong><p>다른 단어로 찾아보거나, 이런 추천은 어떠세요?</p>${suggestions()}</div>`;
+  return `<div class="empty"><span class="big">🌱</span><strong>이 주제는 아직 준비 중이에요</strong><p>다른 주제를 눌러 보세요.</p></div>`;
+}
+function suggestions(){
+  const pick=[...books].sort(()=>Math.random()-.5).slice(0,3);
+  return `<div class="suggest">${pick.map(b=>`<button type="button" data-sid="${b.id}">📚 ${esc(b.title)}</button>`).join('')}</div>`;
+}
+
+function fitCover(img){
+  if(!img.naturalWidth) return;
+  const r=img.naturalHeight/img.naturalWidth;
+  // 이미지 크기(L/XL)에 따른 반올림 오차를 감안해 위쪽 기준은 1.62
+  const odd=r<1.3||r>1.62;
+  img.classList.toggle('fit',odd);
+  const box=img.closest('.cover');
+  if(!box) return;
+  // 상자 크기는 모든 책이 같음 (1:1.45). 넓적한 표지는 양옆을 잘라 꽉 채우고, 길쭉한 표지만 자르지 않고 넣음
+  box.classList.toggle('is-wide',r<1.3);
+  box.classList.toggle('is-fit',r>1.62);
+  if(r<1.3&&!box.querySelector('.blur-bg')){
+    const bg=document.createElement('img');
+    bg.className='blur-bg';bg.alt='';bg.setAttribute('aria-hidden','true');bg.src=img.currentSrc||img.src;
+    box.insertBefore(bg,img);
+  }
+}
+function render(){
+  renderTabs(); renderFilters();
+  const {t,items}=current();
+  $('count').textContent=`${ICON[tab]} ${items.length}${t.unit}${q?` · ‘${q}’ 검색 결과`:''}`;
+  $('list-title').textContent=`${t.label.replace(/^\S+\s/,'')} 목록`;
+  const list=$('list');
+  list.className=tab==='books'?'shelf':tab==='movies'?'movie-grid':tab==='study'?'study-list':(tab==='tips'||tab==='goods')?'blog-list':'media-list';
+  list.innerHTML=items.length?items.map(tab==='books'?bookCard:(tab==='tips'||tab==='goods')?blogCard:tab==='movies'?movieCard:tab==='study'?studyCard:mediaCard).join(''):emptyState(t);
+  if(!items.length) list.className='media-list';
+  $('source').textContent=t.source;
+
+  list.querySelectorAll('img[data-fallback]').forEach(img=>img.onerror=()=>{
+    img.parentElement.insertAdjacentHTML('beforeend',`<span class="cover-fallback"><span class="big">📚</span>${img.dataset.fallback}</span>`);img.remove();});
+  list.querySelectorAll('.cover img').forEach(img=>{const f=()=>fitCover(img);img.complete?f():img.addEventListener('load',f);});
+  list.querySelectorAll('img[data-hide]').forEach(img=>{const ok=()=>img.parentElement.classList.add('has-poster');img.complete&&img.naturalWidth?ok():img.addEventListener('load',ok);img.onerror=()=>img.remove();});
+  list.querySelectorAll('.book').forEach(el=>el.onclick=()=>openItem(books.find(b=>b.id===el.dataset.id),'books'));
+  list.querySelectorAll('.media-card').forEach(el=>el.onclick=()=>{const it=items[+el.dataset.i];openItem(it,it._kind||tab);});
+  list.querySelectorAll('[data-sid]').forEach(el=>el.onclick=()=>openItem(books.find(b=>b.id===el.dataset.sid),'books'));
+  list.querySelectorAll('[data-reset]').forEach(el=>el.onclick=()=>{cat='전체';render();});
+}
+
+/* 상세 */
+let lastFocus;
+function fmtMonth(s){const [y,m]=String(s||'').split('-');return y&&m?`${y}년 ${+m}월 기준`:'';}
+function findRelated(r){
+  if(r.kind==='books')return books.find(b=>b.id===r.id);
+  if(r.kind==='youtube')return youtube.find(y=>y.handle===r.handle);
+  return null;
+}
+function tipDetail(it,medical){
+  const points=`<ul class="tip-points">${it.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`;
+  const body=it.body
+    ?`<div class="review"><h3>✍️ 직접 해 본 이야기</h3><blockquote>${esc(it.body)}</blockquote></div>`
+    :`<div class="review todo"><h3>✍️ 직접 해 본 이야기</h3><blockquote>[이야기 자리] 데이터의 body 칸에 직접 해 보니 어땠는지 적으면 여기에 보여요.</blockquote></div>`;
+  const fact=it.fact?`<div class="tip-fact"><h3>📌 알아 두면 좋은 정보</h3><p>${esc(it.fact)}</p>${it.sources.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">출처: ${esc(s.label)} ↗</a>`).join('')}</div>`:'';
+  const rel=(it.related||[]).map(r=>({r,item:findRelated(r)})).filter(x=>x.item);
+  const related=rel.length?`<div class="tip-related"><h3>함께 보면 좋아요</h3><div>${rel.map((x,i)=>`<button type="button" data-rel="${i}">${ICON[x.r.kind]} ${esc(x.item.title)}</button>`).join('')}</div></div>`:'';
+  // 원문 주소(스레드·블로그)가 있으면 전체 글 보기 버튼
+  const o=String(it.origin||'');
+  const originLabel=/threads\.(net|com)/.test(o)?'스레드에서 전체 글 보기':/blog\.naver\.com/.test(o)?'블로그에서 전체 글 보기':'원문 전체 보기';
+  const origin=o?`<a class="out" href="${esc(o)}" target="_blank" rel="noopener noreferrer">${originLabel} ↗</a>`:'';
+  return {html:`<div style="padding-top:22px"><div class="pill">${esc(it.icon)} ${esc(it.topic)}</div><h2 id="detail-title">${esc(it.title)}</h2><p class="tip-date">${fmtMonth(it.updated)}</p></div>
+    ${points}${body}${fact}${medical}${related}${origin}`,rel};
+}
+function openItem(it,kind,opts){
+  const replace=opts&&opts.replace;
+  if(!replace)lastFocus=document.activeElement;
+  if(kind==='tips'){
+    const medicalT=it.medical?`<div class="disclaimer"><span>🩺</span><span>개인의 경험과 공개된 자료를 바탕으로 정리했어요. 아이의 발달과 건강에 관한 판단은 꼭 의사 등 전문가와 상담하세요.</span></div>`:'';
+    const {html,rel}=tipDetail(it,medicalT);
+    $('detail').innerHTML=html;
+    $('detail').querySelectorAll('[data-rel]').forEach(b=>b.onclick=()=>{const x=rel[+b.dataset.rel];openItem(x.item,x.r.kind,{replace:true});});
+    showDialog(replace);
+    return;
+  }
+  const review=it.review
+    ? `<div class="review"><h3>✍️ 직접 써 본 한줄평</h3><blockquote>${esc(it.review)}</blockquote></div>`
+    : `<div class="review todo"><h3>✍️ 직접 써 본 한줄평</h3><blockquote>[한줄평 자리] 데이터의 review 칸에 경험을 한 문장으로 적으면 여기에 보여요.</blockquote></div>`;
+  const medical=((kind==='books'&&MEDICAL.includes(it.category))||it.medical)
+    ? `<div class="disclaimer"><span>🩺</span><span>개인의 경험을 바탕으로 한 추천이에요. 아이와 엄마의 건강에 관한 결정은 꼭 의사 등 전문가와 상담하세요.</span></div>`:'';
+  let head='',link='',label='';
+  if(kind==='books'){
+    head=`<div class="detail"><img src="https://image.yes24.com/goods/${it.id}/XL" alt="${esc(it.title)} 표지" onerror="this.style.display='none'">
+      <div>${it.pick?'<span class="pick-pill">강력 추천</span><br>':''}<div class="pill">📚 ${esc(it.category||'책')}</div><h2 id="detail-title">${esc(it.title)}</h2><p>${esc(it.author)} 저</p></div></div>`;
+    link=`https://www.yes24.com/product/goods/${it.id}`;label='YES24에서 책 정보 보기';
+  }else if(kind==='youtube'){
+    head=`<div class="yt-head"><span class="yt-avatar sm"><span class="yt-ph" aria-hidden="true">▶</span><img src="${esc(it.avatar)}" alt="" onerror="this.remove()"></span>
+      <div><div class="pill">▶️ 유튜브 채널</div><h2 id="detail-title">${esc(it.title)}</h2><p class="en-handle">${esc(it.handle)} · ${esc(it.theme)}</p></div></div>
+      ${it.about?`<p class="yt-about">${esc(it.about)}</p>`:''}`;
+    link=it.url;label='유튜브 채널 보러 가기';
+  }else{
+    const pill=kind==='movies'?(it.tv?'📺 드라마·시리즈':'🎬 영화'):'🎓 강의';
+    const sub=kind==='movies'?[it.original,it.year].filter(Boolean).join(' · '):it.provider;
+    head=`<div style="padding-top:22px"><div class="pill">${pill}</div><h2 id="detail-title">${esc(it.title)}</h2><p>${esc(sub)} · ${esc(it.theme)}</p></div>`;
+    link=it.url;label=kind==='movies'?'TMDB에서 영화 정보 보기':'운영기관에서 과정 확인하기';
+  }
+  $('detail').innerHTML=`${head}
+    ${it.hint?`<span class="when">💡 이럴 때 보세요 · ${esc(it.hint)}</span>`:''}
+    ${review}${medical}
+    ${it.info?`<p class="info">${esc(it.info)}</p>`:''}
+    <a class="out" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>
+    <p class="out-note">새 창에서 열려요. 페이지가 열리지 않으면 링크가 바뀌었을 수 있어요.</p>`;
+  const dimg=$('detail').querySelector('.detail img');
+  if(dimg){const f=()=>fitCover(dimg);dimg.complete?f():dimg.addEventListener('load',f);}
+  showDialog(replace);
+}
+function hideDialog(){
+  if(!$('dialog').classList.contains('open'))return;
+  $('dialog').classList.remove('open');document.body.style.overflow='';
+  // 상세 창이 열려 있는 동안 시트 내용이 도착했으면 닫을 때 다시 그림
+  if(window.__sheetPending){window.__sheetPending=false;render();}
+  if(lastFocus&&document.contains(lastFocus))lastFocus.focus();
+}
+function closeDialog(){
+  // 기록을 추가했으면 뒤로 가기로 닫음(popstate에서 hideDialog 실행)
+  if(history.state&&history.state.sheet){history.back();}else{hideDialog();}
+}
+window.addEventListener('popstate',hideDialog);
+$('close').onclick=closeDialog;
+$('dialog').onclick=e=>{if(e.target.id==='dialog')closeDialog();};
+document.addEventListener('keydown',e=>{
+  if(!$('dialog').classList.contains('open'))return;
+  if(e.key==='Escape'){closeDialog();return;}
+  // QA: 상세 창이 열려 있을 때 Tab 키 포커스가 창 밖으로 나가지 않게 함
+  if(e.key==='Tab'){
+    const f=[...$('dialog').querySelectorAll('button,a[href]')];
+    const first=f[0],last=f[f.length-1];
+    if(e.shiftKey&&document.activeElement===first){last.focus();e.preventDefault();}
+    else if(!e.shiftKey&&document.activeElement===last){first.focus();e.preventDefault();}
+  }
+});
+
+/* 검색 */
+let timer;
+$('q').addEventListener('input',e=>{
+  clearTimeout(timer);
+  timer=setTimeout(()=>{
+    const prev=q;
+    q=e.target.value.trim();$('clearQ').classList.toggle('hidden',!q);
+    // QA: 새로 검색하면 주제 필터를 '전체'로 되돌려 결과가 숨지 않게 함
+    if(q&&q!==prev)cat='전체';
+    // 현재 탭에 결과가 없고 다른 탭에 있으면 그 탭으로 이동
+    if(q && !TABS.find(t=>t.key===tab).items.some(matches)){
+      const other=TABS.find(t=>t.items.some(matches)); if(other){tab=other.key;cat='전체';}
+    }
+    render();
+  },150);
+});
+$('clearQ').onclick=()=>{$('q').value='';q='';$('clearQ').classList.add('hidden');render();$('q').focus();};
+
+/* 다크 모드 (기기 설정을 기본으로 따르고, 버튼으로 바꿀 수 있음) */
+const root=document.documentElement;
+function sysDark(){return matchMedia('(prefers-color-scheme: dark)').matches;}
+function isDark(){const t=root.dataset.theme;return t?t==='dark':sysDark();}
+function syncThemeBtn(){$('themeBtn').textContent=isDark()?'☀️':'🌙';}
+try{const saved=localStorage.getItem('theme');if(saved)root.dataset.theme=saved;}catch(e){}
+$('themeBtn').onclick=()=>{root.dataset.theme=isDark()?'light':'dark';try{localStorage.setItem('theme',root.dataset.theme);}catch(e){}syncThemeBtn();};
+syncThemeBtn();
+// QA: 기기의 밝기 설정이 바뀌면 버튼 아이콘도 맞춰 바꿈
+try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',syncThemeBtn);}catch(e){}
+
+// 대타이틀 → 홈(책 탭, 필터·검색 초기화, 맨 위)
+const smooth=()=>matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth';
+$('homeLink').onclick=e=>{
+  e.preventDefault();
+  if($('dialog').classList.contains('open'))hideDialog();
+  tab='books';cat='전체';studyKind='all';movieKind='전체';q='';$('q').value='';$('clearQ').classList.add('hidden');
+  render();window.scrollTo({top:0,behavior:smooth()});
+};
+// 맨 위로 버튼: 화면 한 장 이상 내려가면 나타남
+const toTop=$('toTop');
+const syncToTop=()=>toTop.classList.toggle('show',window.scrollY>innerHeight*0.8);
+window.addEventListener('scroll',syncToTop,{passive:true});syncToTop();
+toTop.onclick=()=>{window.scrollTo({top:0,behavior:smooth()});$('homeLink').focus({preventScroll:true});};
+
+renderProfileBtn();
+render();
+
+/* ───────── 구글 시트 연결 ─────────
+   시트: 우리의 육아 모음ZIP 콘텐츠 (링크가 있는 모든 사용자 · 뷰어)
+   페이지를 열면 먼저 이 파일 안의 내용으로 그리고, 시트를 읽어 오면 최신 내용으로 다시 그림.
+   시트를 읽지 못하면 파일 안의 내용을 그대로 보여 줌. */
+const SHEET_ID='17sYEdFD7Ey5GK-e8tB8f6I6bdx4IoVgdouKo8eblrsg';
+function parseCSV(text){
+  const rows=[];let row=[],cell='',q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){cell+='"';i++;} else q=false; } else cell+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){row.push(cell);cell='';}
+    else if(c==='\n'){row.push(cell);rows.push(row);row=[];cell='';}
+    else if(c!=='\r') cell+=c;
+  }
+  if(cell!==''||row.length){row.push(cell);rows.push(row);}
+  return rows;
+}
+async function loadTab(name){
+  const url=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&headers=1&sheet=${encodeURIComponent(name)}`;
+  const res=await fetch(url,{cache:'no-store'});
+  if(!res.ok) throw new Error(name+' '+res.status);
+  const [head,...body]=parseCSV(await res.text());
+  const keys=head.map(h=>h.trim());
+  // 탭 이름이 틀리면 구글이 오류 대신 첫 번째 탭을 보내 주므로, 제목 줄로 맞는 탭인지 확인
+  const need={'책':'YES24 주소','영화':'TMDB 주소','강의':'과정명','유튜브':'채널 주소','꿀팁':'체크리스트','블로그':'블로그 주소','용품':'블로그 주소','소개':'항목'}[name];
+  if(need&&!keys.includes(need)) throw new Error(`'${name}' 탭을 찾지 못했어요 (탭 이름이나 첫 줄이 바뀌었는지 확인)`);
+  return body.map(r=>Object.fromEntries(keys.map((k,i)=>[k,(r[i]||'').trim()])));
+}
+// 공개(Y)만, 순서 숫자대로
+const visible=rows=>rows.filter(r=>r['공개']==='Y').sort((a,b)=>(parseFloat(a['순서'])||1e9)-(parseFloat(b['순서'])||1e9));
+const lines=s=>String(s||'').split(/\n+/).map(x=>x.trim()).filter(Boolean);
+const yes24Id=u=>(String(u).match(/goods\/(\d+)/)||[])[1];
+// TMDB 영화(/movie/)와 TV 시리즈(/tv/) 주소 모두 지원
+const tmdbId=u=>(String(u).match(/\/(?:movie|tv)\/(\d+)/)||[])[1];
+const isTv=u=>/\/tv\/\d+/.test(String(u));
+const ytHandle=u=>{const m=String(u).match(/youtube\.com\/(@[^/?#]+)/);return m?decodeURIComponent(m[1]):'';};
+function replaceAll(arr,items){arr.splice(0,arr.length,...items);}
+
+async function loadSheet(){
+  try{
+    // 속도: 시트 탭을 모두 동시에 요청 (블로그·용품은 실패해도 나머지는 보이도록 따로 받아 둠)
+    // 예전 글 방식 '꿀팁' 탭은 화면에서 쓰지 않아서 요청하지 않음
+    const extra=['블로그','용품'].map(n=>loadTab(n).catch(e=>{console.warn(`${n} 탭을 읽지 못해 파일 안의 내용을 보여 줍니다.`,e);return null;}));
+    const [B,M,C,Y,P]=await Promise.all(['책','영화','강의','유튜브','소개'].map(loadTab));
+    replaceAll(books,visible(B).map(r=>({id:yes24Id(r['YES24 주소']),title:r['제목'],author:r['저자'],category:r['주제'],
+      hint:r['이럴 때 보세요'],review:r['한줄평'],pick:r['강력 추천']==='Y'})).filter(b=>b.id&&b.title));
+    replaceAll(movies,visible(M).map(r=>({tmdb:tmdbId(r['TMDB 주소'])||'',tv:isTv(r['TMDB 주소']),poster:r['포스터 이미지 주소'],title:r['제목'],original:r['원제'],
+      year:r['개봉 연도'],theme:r['주제'],hint:r['이럴 때 보세요'],url:r['TMDB 주소'],review:r['한줄평'],kind:r['분류']||''})).filter(m=>m.title));
+    replaceAll(courses,visible(C).map(r=>({title:r['과정명'],provider:r['운영기관'],theme:r['주제'],hint:r['이럴 때 보세요'],
+      url:r['과정 주소'],info:r['안내 문구'],review:r['한줄평']})).filter(c=>c.title));
+    replaceAll(youtube,visible(Y).map(r=>({url:r['채널 주소'],title:r['채널명'],handle:r['핸들']||ytHandle(r['채널 주소']),
+      avatar:r['프로필 사진 주소'],theme:r['주제'],hint:r['이럴 때 보세요'],about:r['채널 소개'],medical:r['건강 정보']==='Y',review:r['한줄평']})).filter(y=>y.title));
+    // 블로그(후기 탭)·용품: 못 읽은 탭은 파일 안의 내용 유지
+    const [G1,G2]=await Promise.all(extra);
+    for(const [G,arr] of [[G1,blogs],[G2,goods]]){
+      if(G) replaceAll(arr,visible(G).map(r=>({url:r['블로그 주소'],title:r['제목'],hint:r['이럴 때 보세요'],thumb:r['썸네일 주소'],
+        date:r['작성일'],topic:r['주제']})).filter(b=>b.url&&b.title));
+    }
+    // 소개: 비어 있는 칸은 파일 안의 기본값 유지
+    const kv=Object.fromEntries(P.map(r=>[r['항목'],r['내용']]));
+    const set=(k,v)=>{if(v)PROFILE[k]=v;};
+    set('nickname',kv['닉네임']);set('avatarText',kv['프로필 글자']);set('avatar',kv['프로필 사진 주소']==='profile.jpg'?PROFILE_IMG:kv['프로필 사진 주소']);
+    set('role',kv['한 줄 소개']);set('story',kv['만든 이유']);
+    const rules=[kv['추천 기준 1'],kv['추천 기준 2'],kv['추천 기준 3']].filter(Boolean); if(rules.length)PROFILE.rules=rules;
+    PROFILE.links=[1,2,3].map(n=>({label:kv[`링크 ${n} 이름`],url:kv[`링크 ${n} 주소`]||''})).filter(l=>l.label);
+    renderProfileBtn();
+    if(!$('dialog').classList.contains('open')) render(); else window.__sheetPending=true;
+    document.documentElement.dataset.source='sheet';
+  }catch(e){
+    console.warn('시트를 읽지 못해 파일 안의 내용을 보여 줍니다.',e);
+    document.documentElement.dataset.source='embedded';
+  }
+}
+loadSheet();
+</script>
+</body>
+</html>
