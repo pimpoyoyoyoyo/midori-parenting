@@ -198,6 +198,9 @@ input[type=search]::-webkit-search-cancel-button{display:none}
 .info{margin:14px 0 0;font-size:14px;line-height:1.6;color:var(--muted)}
 .out{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:22px;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:14px 18px;border-radius:8px;font-size:15px;font-weight:700;min-height:50px}
 .out-note{font-size:12px;color:var(--soft);text-align:center;margin-top:8px}
+/* YES24 애드온(제휴) 링크 수수료 안내: 버튼 바로 아래 */
+.ad-note{display:flex;gap:6px;align-items:flex-start;margin:10px 2px 0;font-size:12px;line-height:1.55;color:var(--soft);word-break:keep-all}
+.ad-note i{flex:none;font-style:normal;font-family:var(--f-en);font-size:10.5px;font-weight:800;letter-spacing:.06em;color:var(--warm);background:#FFF1E8;border-radius:4px;padding:1px 6px;margin-top:1px}
 
 @media(max-width:1100px){
   .shelf{grid-template-columns:repeat(4,minmax(0,1fr))}
@@ -602,33 +605,33 @@ function showDialog(replace){
    pick:   true면 '강력 추천' 라벨 + 목록 맨 앞에 표시
 */
 const books=[
- {"id": "103285142", "title": "통곡 없이 잠 잘 자는 아기의 비밀", "author": "곽윤철", "category": "수면·생활", "hint": "0~2세 수면을 고민할 때", "review": "수면교육을 왜 해야하는지 차근차근 설명해주는 책. 상황별 Q&A로 필요한 내용만 빠르게 확인 가능해요", "pick": false},
- {"id": "126680547", "title": "임신 출산 미리보기", "author": "이재일", "category": "임신·출산", "hint": "임신과 출산을 준비할 때", "review": "유튜브 산소형제 채널로 알려진 이재일 선생님이 알려주는 임신 초기 부터 분만까지 시기별로 꼭 알아야하는 것들을 정리해뒀어요", "pick": false},
- {"id": "128589752", "title": "0~3세 기적의 뇌과학 육아", "author": "그리어 커센바움", "category": "발달·이해", "hint": "영유아 발달을 이해하고 싶을 때", "review": "뇌과학자가 알려주는 아기 뇌발달 원리와 함께 애착 육아하는 방법을 상세하게 설명해뒀어요. 영유아 부모라면 꼭 읽어보는 것을 추천해요", "pick": true},
- {"id": "195124365", "title": "베이비 위스퍼 골드", "author": "트레이시 호그", "category": "수면·생활", "hint": "아기의 일상 리듬을 살펴볼 때", "review": "원조 먹놀잠 'E.A.S.Y' 원칙을 알려줘요. 아기 하루 리듬을 잡는데 참고할만해요. 번역투로 잘 안읽혀서 다른 육아 기본서를 읽고 나서 읽는 것을 추천해요", "pick": false},
- {"id": "85466721", "title": "엄마, 나는 자라고 있어요", "author": "헤티 판 더 레이트", "category": "발달·이해", "hint": "아기의 성장 변화를 살펴볼 때", "review": "우리 아기가 왜 이러나? 싶을때 보면 좋을 책. 아기 시기별 도약기에 대한 이해를 높일 수 있고 대응방법도 알려줘서 유용해요", "pick": false},
- {"id": "125091799", "title": "우리동네 어린이병원 육아대백과", "author": "손수예", "category": "건강·돌봄", "hint": "아이의 건강 정보를 찾아볼 때", "review": "이 한권만 있으면 아기 건강, 발달 모두 한번에 체크 가능해요. 최근에 개정되어서 최신 정보가 잘 정리되어 있어서 추천해요", "pick": true},
- {"id": "104127127", "title": "작은 변화에도 걱정이 많아지는 예비 엄마들에게", "author": "전종관", "category": "임신·출산", "hint": "임신 중 궁금한 점이 많을 때", "review": "유퀴즈에 나와 더욱 유명해지신 전종관 선생님의 걱정이 많은 임산부들을 위한 바이블! 임신하면 이 책부터 보는 것을 추천해요", "pick": false},
- {"id": "122490906", "title": "0~24개월 잘 자는 아이의 비결", "author": "김지현", "category": "수면·생활", "hint": "영아 수면을 살펴볼 때", "review": "영유아 수면컨설팅으로 유명한 '슬베베' 책으로 아이 수면교육에 대한 실질적인 스킬을 배우는데 도움돼요", "pick": false},
- {"id": "139734658", "title": "김수연의 아기발달 백과", "author": "김수연", "category": "발달·이해", "hint": "아기 발달을 살펴볼 때", "review": "시기별 아기 발달을 체크해볼 수 있어요. K-DST와 연계해서 체크해보면 좋아요. 이 책 덕분에 아기 대근육발달지연도 빨리 알게 되었어요", "pick": false},
- {"id": "124472741", "title": "첫 1년 움직임의 비밀", "author": "마리안 헤름센-판 완로이", "category": "발달·이해", "hint": "첫해의 움직임 발달을 알고 싶을 때", "review": "대근육발달에 대해 상세하게 알려주는 책이에요. 아기 자세를 살피는 눈이 생겨서 추천해요", "pick": false},
- {"id": "102486557", "title": "베이비 몬테소리 육아대백과", "author": "시모네 데이비스", "category": "몬테소리", "hint": "몬테소리 육아를 알아볼 때", "review": "첫돌까지의 일상, 집 환경, 놀이를 몬테소리 원칙으로 알려줘요. 몬테소리 교구를 들이기 전에 이 책부터 보세요", "pick": false},
- {"id": "114679609", "title": "괜찮아, 우리도 몬테소리가 처음이야", "author": "정이비", "category": "몬테소리", "hint": "몬테소리 교육을 시작할 때", "review": "몬테소리를 집에서 실천해 본 0-3세 엄마들의 사례가 잘 정리되어 있어요. 몬테소리에 관심이 많다면 꼭 추천하는 책이에요", "pick": false},
- {"id": "147561803", "title": "천근아의 두뇌 육아", "author": "천근아", "category": "발달·이해", "hint": "아이의 두뇌 발달을 알아볼 때", "review": "0-36개월 월령별 두뇌 발달 맞춤 육아법을 알려줘요. 0-3세 기적의 뇌과학 육아와 비슷한 톤이에요", "pick": false},
- {"id": "115814095", "title": "돌봄과 작업", "author": "정서경", "category": "부모의 삶", "hint": "돌봄과 일을 함께 생각해 보고 싶을 때", "review": "아이를 키우며 일을 이어가는 11명의 워킹맘의 솔직한 고민과 선택을 담은 에세이예요. 여러번 읽어도 마음에 울림이 가요", "pick": false},
- {"id": "119847141", "title": "돌봄과 작업 2", "author": "김유담", "category": "부모의 삶", "hint": "돌봄과 일을 함께 생각해 보고 싶을 때", "review": "육아와 일 사이에서 각자의 방식을 찾아가는 엄마들의 이야기예요. 모두 비슷한 고민을 하고 있다는 사실이 큰 위안이 되었어요", "pick": false},
- {"id": "126978860", "title": "요즘 육아", "author": "곽연선", "category": "부모의 삶", "hint": "오늘의 육아를 사회적 관점에서 살펴볼 때", "review": "임신,출산, 육아가 나만 힘든가? 라는 물음에 그렇지 않다는 이유를 차근히 설명해줘요. 일과 육아, 돌봄공백까지 요즘 부모가 겪는 현실을 데이터로 설명해줘요", "pick": false},
- {"id": "187530038", "title": "어린 나를 키우는 마음으로", "author": "김나무", "category": "부모의 삶", "hint": "아이를 키우며 자신의 마음을 돌아볼 때", "review": "육아 에세이 중 가장 따스해요. 아기를 키우며 내 어린 시절과 부모와의 관계를 다시 보게 되는 에세이예요", "pick": true},
- {"id": "126680426", "title": "초보 부모 방탄 육아", "author": "이재현", "category": "건강·돌봄", "hint": "첫해의 육아와 건강 정보를 살펴볼 때", "review": "NICU 의사 아빠가 알려주는 0-1세에 꼭 알아야 할 건강, 안전 지식이 잘 정리되어 있어요", "pick": false},
- {"id": "165325478", "title": "소리로 시작하는 영어 그림책", "author": "조이스 박, 배성기", "category": "교육", "hint": "영어 노출을 고민할 때", "review": "소리 발달 단계에 맞춘 영어 그림책으로 영어 노출하는 방법을 알려줘요. 영유아 영어 교육이 고민될때 도움이 돼요", "pick": false},
- {"id": "125664850", "title": "그럼에도 육아", "author": "정지우", "category": "부모의 삶", "hint": "부모가 된다는 것을 고민할 때", "review": "따스한 시선으로 부모가 됨이 어떤 의미인지 함께 고민할 수 있는 에세이예요", "pick": false},
- {"id": "38235781", "title": "나는 워킹맘입니다", "author": "김아연", "category": "부모의 삶", "hint": "복직을 앞두고 걱정될 때", "review": "복직을 앞둔 워킹맘이라면 무조건 읽어 봐야할 책. 회사, 가정 생활에서 도움이 될만한 꿀팁이 가득 있어요", "pick": true},
- {"id": "141267373", "title": "베싸의 말문이 트이는 영어 육아", "author": "박정은", "category": "교육", "hint": "영어 노출 방법이 고민될 때", "review": "육아 인플루언서 베싸가 알려주는 엄마표 영어 노하우! 빠르게 훑어볼 수 있어요", "pick": false},
- {"id": "126110769", "title": "4~7세 보고 만지는 수학은 이렇게 가르칩니다", "author": "최경희", "category": "교육", "hint": "엄마표 수학이 궁금할 때", "review": "수포자 엄마가 아이 수학 교육이 고민돼서 찾아 본 책. 쉽게 사례중심으로 되어 있어서 읽기 편했어요", "pick": false},
- {"id": "145036024", "title": "우리 아이 언어발달", "author": "김수연", "category": "발달·이해", "hint": "아기 언어 발달이 궁금할 때", "review": "시기별 언어 발달 체크리스트와 언어 발달을 위해 부모가 해줄 수 있는 것들이 구체적으로 제시되어 좋았어요", "pick": false},
- {"id": "125183742", "title": "뿐이 토핑 이유식", "author": "정주희", "category": "아기 식사", "hint": "이유식을 처음 시작할 때", "review": "워낙 유명한 책이라서 이유식 처음 시작할때 한 권 있으면 참고하기 좋아요. 다만 토핑 이유식을 지속할지는 부모의 선택!", "pick": false},
- {"id": "101687655", "title": "라임맘의 실패 없는 아이주도 이유식&유아식", "author": "옥한나", "category": "아기 식사", "hint": "아기 식단이 고민일 때", "review": "부록에 재료별로 정리해둔게 아주 유용해요! 레시피가 간단해서 따라하기 편해요", "pick": false},
- {"id": "192274401", "title": "집밥력", "author": "홀썸모먼트", "category": "아기 식사", "hint": "아기와 함께 먹는 식사 차릴 때", "review": "저당, 저염 식단을 소개하여 아기와 함께 먹는 유아식을 차릴 때 참고하기 좋아요", "pick": false}
+ {"id": "103285142", "title": "통곡 없이 잠 잘 자는 아기의 비밀", "author": "곽윤철", "category": "수면·생활", "hint": "0~2세 수면을 고민할 때", "review": "수면교육을 왜 해야하는지 차근차근 설명해주는 책. 상황별 Q&A로 필요한 내용만 빠르게 확인 가능해요", "pick": false, "addon": "https://link.yes24.com/a/LdRDfBKFfB"},
+ {"id": "126680547", "title": "임신 출산 미리보기", "author": "이재일", "category": "임신·출산", "hint": "임신과 출산을 준비할 때", "review": "유튜브 산소형제 채널로 알려진 이재일 선생님이 알려주는 임신 초기 부터 분만까지 시기별로 꼭 알아야하는 것들을 정리해뒀어요", "pick": false, "addon": ""},
+ {"id": "128589752", "title": "0~3세 기적의 뇌과학 육아", "author": "그리어 커센바움", "category": "발달·이해", "hint": "영유아 발달을 이해하고 싶을 때", "review": "뇌과학자가 알려주는 아기 뇌발달 원리와 함께 애착 육아하는 방법을 상세하게 설명해뒀어요. 영유아 부모라면 꼭 읽어보는 것을 추천해요", "pick": true, "addon": ""},
+ {"id": "195124365", "title": "베이비 위스퍼 골드", "author": "트레이시 호그", "category": "수면·생활", "hint": "아기의 일상 리듬을 살펴볼 때", "review": "원조 먹놀잠 'E.A.S.Y' 원칙을 알려줘요. 아기 하루 리듬을 잡는데 참고할만해요. 번역투로 잘 안읽혀서 다른 육아 기본서를 읽고 나서 읽는 것을 추천해요", "pick": false, "addon": ""},
+ {"id": "85466721", "title": "엄마, 나는 자라고 있어요", "author": "헤티 판 더 레이트", "category": "발달·이해", "hint": "아기의 성장 변화를 살펴볼 때", "review": "우리 아기가 왜 이러나? 싶을때 보면 좋을 책. 아기 시기별 도약기에 대한 이해를 높일 수 있고 대응방법도 알려줘서 유용해요", "pick": false, "addon": ""},
+ {"id": "125091799", "title": "우리동네 어린이병원 육아대백과", "author": "손수예", "category": "건강·돌봄", "hint": "아이의 건강 정보를 찾아볼 때", "review": "이 한권만 있으면 아기 건강, 발달 모두 한번에 체크 가능해요. 최근에 개정되어서 최신 정보가 잘 정리되어 있어서 추천해요", "pick": true, "addon": ""},
+ {"id": "104127127", "title": "작은 변화에도 걱정이 많아지는 예비 엄마들에게", "author": "전종관", "category": "임신·출산", "hint": "임신 중 궁금한 점이 많을 때", "review": "유퀴즈에 나와 더욱 유명해지신 전종관 선생님의 걱정이 많은 임산부들을 위한 바이블! 임신하면 이 책부터 보는 것을 추천해요", "pick": false, "addon": ""},
+ {"id": "122490906", "title": "0~24개월 잘 자는 아이의 비결", "author": "김지현", "category": "수면·생활", "hint": "영아 수면을 살펴볼 때", "review": "영유아 수면컨설팅으로 유명한 '슬베베' 책으로 아이 수면교육에 대한 실질적인 스킬을 배우는데 도움돼요", "pick": false, "addon": ""},
+ {"id": "139734658", "title": "김수연의 아기발달 백과", "author": "김수연", "category": "발달·이해", "hint": "아기 발달을 살펴볼 때", "review": "시기별 아기 발달을 체크해볼 수 있어요. K-DST와 연계해서 체크해보면 좋아요. 이 책 덕분에 아기 대근육발달지연도 빨리 알게 되었어요", "pick": false, "addon": ""},
+ {"id": "124472741", "title": "첫 1년 움직임의 비밀", "author": "마리안 헤름센-판 완로이", "category": "발달·이해", "hint": "첫해의 움직임 발달을 알고 싶을 때", "review": "대근육발달에 대해 상세하게 알려주는 책이에요. 아기 자세를 살피는 눈이 생겨서 추천해요", "pick": false, "addon": ""},
+ {"id": "102486557", "title": "베이비 몬테소리 육아대백과", "author": "시모네 데이비스", "category": "몬테소리", "hint": "몬테소리 육아를 알아볼 때", "review": "첫돌까지의 일상, 집 환경, 놀이를 몬테소리 원칙으로 알려줘요. 몬테소리 교구를 들이기 전에 이 책부터 보세요", "pick": false, "addon": ""},
+ {"id": "114679609", "title": "괜찮아, 우리도 몬테소리가 처음이야", "author": "정이비", "category": "몬테소리", "hint": "몬테소리 교육을 시작할 때", "review": "몬테소리를 집에서 실천해 본 0-3세 엄마들의 사례가 잘 정리되어 있어요. 몬테소리에 관심이 많다면 꼭 추천하는 책이에요", "pick": false, "addon": ""},
+ {"id": "147561803", "title": "천근아의 두뇌 육아", "author": "천근아", "category": "발달·이해", "hint": "아이의 두뇌 발달을 알아볼 때", "review": "0-36개월 월령별 두뇌 발달 맞춤 육아법을 알려줘요. 0-3세 기적의 뇌과학 육아와 비슷한 톤이에요", "pick": false, "addon": ""},
+ {"id": "115814095", "title": "돌봄과 작업", "author": "정서경", "category": "부모의 삶", "hint": "돌봄과 일을 함께 생각해 보고 싶을 때", "review": "아이를 키우며 일을 이어가는 11명의 워킹맘의 솔직한 고민과 선택을 담은 에세이예요. 여러번 읽어도 마음에 울림이 가요", "pick": false, "addon": ""},
+ {"id": "119847141", "title": "돌봄과 작업 2", "author": "김유담", "category": "부모의 삶", "hint": "돌봄과 일을 함께 생각해 보고 싶을 때", "review": "육아와 일 사이에서 각자의 방식을 찾아가는 엄마들의 이야기예요. 모두 비슷한 고민을 하고 있다는 사실이 큰 위안이 되었어요", "pick": false, "addon": ""},
+ {"id": "126978860", "title": "요즘 육아", "author": "곽연선", "category": "부모의 삶", "hint": "오늘의 육아를 사회적 관점에서 살펴볼 때", "review": "임신,출산, 육아가 나만 힘든가? 라는 물음에 그렇지 않다는 이유를 차근히 설명해줘요. 일과 육아, 돌봄공백까지 요즘 부모가 겪는 현실을 데이터로 설명해줘요", "pick": false, "addon": ""},
+ {"id": "187530038", "title": "어린 나를 키우는 마음으로", "author": "김나무", "category": "부모의 삶", "hint": "아이를 키우며 자신의 마음을 돌아볼 때", "review": "육아 에세이 중 가장 따스해요. 아기를 키우며 내 어린 시절과 부모와의 관계를 다시 보게 되는 에세이예요", "pick": true, "addon": ""},
+ {"id": "126680426", "title": "초보 부모 방탄 육아", "author": "이재현", "category": "건강·돌봄", "hint": "첫해의 육아와 건강 정보를 살펴볼 때", "review": "NICU 의사 아빠가 알려주는 0-1세에 꼭 알아야 할 건강, 안전 지식이 잘 정리되어 있어요", "pick": false, "addon": ""},
+ {"id": "165325478", "title": "소리로 시작하는 영어 그림책", "author": "조이스 박, 배성기", "category": "교육", "hint": "영어 노출을 고민할 때", "review": "소리 발달 단계에 맞춘 영어 그림책으로 영어 노출하는 방법을 알려줘요. 영유아 영어 교육이 고민될때 도움이 돼요", "pick": false, "addon": ""},
+ {"id": "125664850", "title": "그럼에도 육아", "author": "정지우", "category": "부모의 삶", "hint": "부모가 된다는 것을 고민할 때", "review": "따스한 시선으로 부모가 됨이 어떤 의미인지 함께 고민할 수 있는 에세이예요", "pick": false, "addon": ""},
+ {"id": "38235781", "title": "나는 워킹맘입니다", "author": "김아연", "category": "부모의 삶", "hint": "복직을 앞두고 걱정될 때", "review": "복직을 앞둔 워킹맘이라면 무조건 읽어 봐야할 책. 회사, 가정 생활에서 도움이 될만한 꿀팁이 가득 있어요", "pick": true, "addon": ""},
+ {"id": "141267373", "title": "베싸의 말문이 트이는 영어 육아", "author": "박정은", "category": "교육", "hint": "영어 노출 방법이 고민될 때", "review": "육아 인플루언서 베싸가 알려주는 엄마표 영어 노하우! 빠르게 훑어볼 수 있어요", "pick": false, "addon": ""},
+ {"id": "126110769", "title": "4~7세 보고 만지는 수학은 이렇게 가르칩니다", "author": "최경희", "category": "교육", "hint": "엄마표 수학이 궁금할 때", "review": "수포자 엄마가 아이 수학 교육이 고민돼서 찾아 본 책. 쉽게 사례중심으로 되어 있어서 읽기 편했어요", "pick": false, "addon": ""},
+ {"id": "145036024", "title": "우리 아이 언어발달", "author": "김수연", "category": "발달·이해", "hint": "아기 언어 발달이 궁금할 때", "review": "시기별 언어 발달 체크리스트와 언어 발달을 위해 부모가 해줄 수 있는 것들이 구체적으로 제시되어 좋았어요", "pick": false, "addon": ""},
+ {"id": "125183742", "title": "뿐이 토핑 이유식", "author": "정주희", "category": "아기 식사", "hint": "이유식을 처음 시작할 때", "review": "워낙 유명한 책이라서 이유식 처음 시작할때 한 권 있으면 참고하기 좋아요. 다만 토핑 이유식을 지속할지는 부모의 선택!", "pick": false, "addon": ""},
+ {"id": "101687655", "title": "라임맘의 실패 없는 아이주도 이유식&유아식", "author": "옥한나", "category": "아기 식사", "hint": "아기 식단이 고민일 때", "review": "부록에 재료별로 정리해둔게 아주 유용해요! 레시피가 간단해서 따라하기 편해요", "pick": false, "addon": ""},
+ {"id": "192274401", "title": "집밥력", "author": "홀썸모먼트", "category": "아기 식사", "hint": "아기와 함께 먹는 식사 차릴 때", "review": "저당, 저염 식단을 소개하여 아기와 함께 먹는 유아식을 차릴 때 참고하기 좋아요", "pick": false, "addon": ""}
 ];
 const movies=[
  {"tmdb": "400579", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/uF0zUz3ii163wQzfGbr9Y3k2Xqx.jpg", "title": "툴리", "original": "Tully", "year": "2018", "theme": "출산 후의 삶", "hint": "산후 우울감이 이해받고 싶을 때", "url": "https://www.themoviedb.org/movie/400579-tully?language=ko", "review": "", "kind": "영화"},
@@ -671,7 +674,8 @@ const youtube=[
  {"url": "https://www.youtube.com/@o2brothersTV", "video": "", "title": "산소형제TV", "channel": "", "handle": "@o2brothersTV", "avatar": "https://yt3.googleusercontent.com/6-X6m48LPJqUfqQQVjEFEyPNOLB8NWsNNxMWwpeae8xgeQ5MM50jPyPTzBp_vA5jaY7nurlksnE=s240-c-k-c0x00ffffff-no-rj", "theme": "임신·출산 · 아이 건강", "hint": "아이 건강이 걱정될 때 의사의 설명을 듣고 싶을 때", "about": "산부인과·소아과 전문의 형제가 육아와 아이 건강 이야기를 쉽게 풀어 주는 채널이에요.", "medical": true, "review": ""},
  {"url": "https://www.youtube.com/@dr.ko_pediatric_pt", "video": "", "title": "고박사의 미국소아물리치료", "channel": "", "handle": "@dr.ko_pediatric_pt", "avatar": "https://yt3.googleusercontent.com/ixGeE4gLt4rTWcr_v2bIyaSlTqf7TFhiI8iDkdxoYLDfh8wj2KGfKaJuercfjy-OvHDAUfHB=s240-c-k-c0x00ffffff-no-rj", "theme": "대근육 발달 · 놀이 운동", "hint": "뒤집기·기기·걷기 발달이 궁금할 때", "about": "소아 물리치료사가 집에서 따라 할 수 있는 놀이식 운동과 대근육 발달 이야기를 알려 주는 채널이에요.", "medical": true, "review": ""},
  {"url": "https://www.youtube.com/@%ED%95%98%EC%A0%95%ED%9B%88%EC%9D%98%EC%82%90%EB%BD%80%EC%82%90%EB%BD%80119%EC%86%8C", "video": "", "title": "하정훈의 삐뽀삐뽀 119", "channel": "", "handle": "@하정훈의삐뽀삐뽀119소", "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_l7w-A0kB7-I22WePYZSzeJ0fJp84qw8WGUop8xNWeoh0w=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "아이가 아플 때 소아과 의사의 설명이 필요할 때", "about": "", "medical": false, "review": ""},
- {"url": "https://www.youtube.com/@horme_montessori", "video": "", "title": "호르메몬테소리", "channel": "", "handle": "@horme_montessori", "avatar": "https://yt3.googleusercontent.com/kKWFlZ5FEPFzfAHiLpT2MWHQciK7ivcVE37V9DNuaLu3y7XYWx8nFT1f-bwpLJl5yuueoeo-=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "집에서 몬테소리 환경을 꾸며 보고 싶을 때", "about": "", "medical": false, "review": ""}
+ {"url": "https://www.youtube.com/@horme_montessori", "video": "", "title": "호르메몬테소리", "channel": "", "handle": "@horme_montessori", "avatar": "https://yt3.googleusercontent.com/kKWFlZ5FEPFzfAHiLpT2MWHQciK7ivcVE37V9DNuaLu3y7XYWx8nFT1f-bwpLJl5yuueoeo-=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "집에서 몬테소리 환경을 꾸며 보고 싶을 때", "about": "", "medical": false, "review": ""},
+ {"url": "https://www.youtube.com/watch?v=lx4bANqj9r8", "video": "lx4bANqj9r8", "title": "\"야망은 큰데 쉽게 지친다면 이렇게 해보세요\" 상수와 변수로 인생 리셋하는 방법 (19년차 교육 기획자의 루틴)", "channel": "소울정", "handle": "@younsojung", "avatar": "", "theme": "", "hint": "육아와 일 사이에서 쉽게 지칠 때", "about": "", "medical": false, "review": ""}
 ];
 
 /* 꿀팁: 직접 쓰는 글
@@ -705,7 +709,7 @@ const webtoons=[
  {"url": "https://comic.naver.com/webtoon/list?titleId=812354", "hint": "육아 현실에 웃으며 공감하고 싶을 때", "title": "육아일기", "author": "자까", "days": "목, 일 연재", "cover": "https://image-comic.pstatic.net/webtoon/812354/thumbnail/thumbnail_IMAG21_2896806f-bd3e-48af-b7e2-8e380ff702a4.jpg"},
  {"url": "https://comic.naver.com/webtoon/list?titleId=817945", "hint": "어린이집 보내기 전, 선생님의 하루가 궁금할 때", "title": "어린이집 다니는 구나", "author": "구나", "days": "월, 수 연재", "cover": "https://image-comic.pstatic.net/webtoon/817945/thumbnail/thumbnail_IMAG21_c90a6d9e-3df5-41c4-b11a-7c6e61a89174.jpg"},
  {"url": "https://comic.naver.com/webtoon/list?titleId=840736", "hint": "가족의 의미를 따뜻하게 느끼고 싶을 때", "title": "위탁가족!", "author": "조똘복", "days": "토요웹툰", "cover": "https://image-comic.pstatic.net/webtoon/840736/thumbnail/thumbnail_IMAG21_751b8649-6779-4090-afc8-21e4ce0550a2.jpg"},
- {"url": "https://comic.naver.com/webtoon/list?titleId=732955", "hint": "임신·출산 이야기를 의사 엄마의 시선으로 웃으며 보고 싶을 때", "title": "닥터앤닥터 육아일기", "author": "닥터베르", "days": "235화 완결", "cover": "https://image-comic.pstatic.net/webtoon/732955/thumbnail/thumbnail_IMAG21_3835156142623111013.jpg"}
+ {"url": "https://comic.naver.com/webtoon/list?titleId=732955", "hint": "임신·출산 이야기를 웃으며 보고 싶을 때", "title": "닥터앤닥터 육아일기", "author": "닥터베르", "days": "235화 완결", "cover": "https://image-comic.pstatic.net/webtoon/732955/thumbnail/thumbnail_IMAG21_3835156142623111013.jpg"}
 ];
 /* 앱 탭: 시트 '앱' 탭 (아이콘·스토어 주소·개발사는 앱 이름을 보고 채워 둠) */
 const apps=[
@@ -1054,11 +1058,13 @@ function openItem(it,kind,opts){
     : `<div class="review todo"><h3>✍️ 직접 써 본 한줄평</h3><blockquote>[한줄평 자리] 데이터의 review 칸에 경험을 한 문장으로 적으면 여기에 보여요.</blockquote></div>`;
   const medical=((kind==='books'&&MEDICAL.includes(it.category))||it.medical)
     ? `<div class="disclaimer"><span>🩺</span><span>개인의 경험을 바탕으로 한 추천이에요. 아이와 엄마의 건강에 관한 결정은 꼭 의사 등 전문가와 상담하세요.</span></div>`:'';
-  let head='',link='',label='';
+  let head='',link='',label='',ad=false;
   if(kind==='books'){
     head=`<div class="detail"><img src="https://image.yes24.com/goods/${it.id}/XL" alt="${esc(it.title)} 표지" onerror="this.style.display='none'">
       <div>${it.pick?'<span class="pick-pill">강력 추천</span><br>':''}<div class="pill">📚 ${esc(it.category||'책')}</div><h2 id="detail-title">${esc(it.title)}</h2><p>${esc(it.author)} 저</p></div></div>`;
-    link=`https://www.yes24.com/product/goods/${it.id}`;label='YES24에서 책 정보 보기';
+    // 시트 '애드온 링크' 칸이 있으면 YES24 애드온(제휴) 링크로 연결하고 수수료 안내 문구를 버튼 바로 아래에 보여 줌
+    ad=/^https:\/\/link\.yes24\.com\//.test(it.addon||'');
+    link=ad?it.addon:`https://www.yes24.com/product/goods/${it.id}`;label='YES24에서 책 정보 보기';
   }else if(kind==='youtube'){
     head=`<div class="yt-head"><span class="yt-avatar sm"><span class="yt-ph" aria-hidden="true">▶</span><img src="${esc(it.avatar)}" alt="" onerror="this.remove()"></span>
       <div><div class="pill">▶️ 유튜브 채널</div><h2 id="detail-title">${esc(it.title)}</h2><p class="en-handle">${esc(it.handle)} · ${esc(it.theme)}</p></div></div>
@@ -1074,8 +1080,8 @@ function openItem(it,kind,opts){
     ${it.hint?`<span class="when">💡 이럴 때 보세요 · ${esc(it.hint)}</span>`:''}
     ${review}${medical}
     ${it.info?`<p class="info">${esc(it.info)}</p>`:''}
-    <a class="out" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>
-    <p class="out-note">새 창에서 열려요. 페이지가 열리지 않으면 링크가 바뀌었을 수 있어요.</p>`;
+    <a class="out" href="${esc(link)}" target="_blank" rel="noopener noreferrer${ad?' sponsored':''}">${label} ↗</a>
+    ${ad?'<p class="ad-note"><i>AD</i><span>이 포스팅은 애드온 활동의 일환으로, 이에 따라 일정액의 수수료를 제공받습니다.</span></p>':''}`;
   const dimg=$('detail').querySelector('.detail img');
   if(dimg){const f=()=>fitCover(dimg);dimg.complete?f():dimg.addEventListener('load',f);}
   showDialog(replace);
@@ -1199,7 +1205,7 @@ async function loadSheet(){
     const extra=['블로그','용품','앱','웹툰'].map(n=>loadTab(n).catch(e=>{console.warn(`${n} 탭을 읽지 못해 파일 안의 내용을 보여 줍니다.`,e);return null;}));
     const [B,M,C,Y,P]=await Promise.all(['책','영화','강의','유튜브','소개'].map(loadTab));
     replaceAll(books,visible(B).map(r=>({id:yes24Id(r['YES24 주소']),title:r['제목'],author:r['저자'],category:r['주제'],
-      hint:r['이럴 때 보세요'],review:r['한줄평'],pick:r['강력 추천']==='Y'})).filter(b=>b.id&&b.title));
+      hint:r['이럴 때 보세요'],review:r['한줄평'],pick:r['강력 추천']==='Y',addon:r['애드온 링크']||''})).filter(b=>b.id&&b.title));
     replaceAll(movies,visible(M).map(r=>({tmdb:tmdbId(r['TMDB 주소'])||'',tv:isTv(r['TMDB 주소']),poster:r['포스터 이미지 주소'],title:r['제목'],original:r['원제'],
       year:r['개봉 연도'],theme:r['주제'],hint:r['이럴 때 보세요'],url:r['TMDB 주소'],review:r['한줄평'],kind:r['분류']||''})).filter(m=>m.title));
     replaceAll(courses,visible(C).map(r=>({title:r['과정명'],provider:r['운영기관'],theme:r['주제'],hint:r['이럴 때 보세요'],
