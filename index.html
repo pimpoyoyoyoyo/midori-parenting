@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>마음은 언제나 미니멀 육아</title>
-<meta name="description" content="임신부터 육아까지, 직접 보고 써 본 도서·영화·육아용품·강의·유튜브와 육아 후기를 시기와 고민에 따라 모았어요.">
+<meta name="description" content="임신부터 육아까지, 직접 보고 써 본 책·영화·육아 앱·유튜브·강의·웹툰·육아용품과 육아 후기를 시기와 고민에 따라 모았어요.">
 <!-- 카카오톡·SNS 공유 미리보기 -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="마음은 언제나 미니멀 육아">
-<meta property="og:description" content="육아하면서 좋았던 것들, 함께 나눠요! 도서·영화·용품·학습 추천과 육아 후기">
+<meta property="og:description" content="육아하면서 좋았던 것들, 함께 나눠요! 책·영화·앱·콘텐츠·용품 추천과 육아 후기">
 <meta property="og:site_name" content="마음은 언제나 미니멀 육아">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:image" content="https://midori-parenting.vercel.app/og-image.png">
@@ -95,7 +95,9 @@ input[type=search]::-webkit-search-cancel-button{display:none}
 .tab-txt{display:inline-block;line-height:1}
 /* 그림 폭 보정: 📚🧸🎓는 17px, 🎬📝는 15px라서 🎬📝 칸만 양옆 1px씩 좁혀 눈에 보이는 간격을 맞춤.
    새 이모지를 쓰면 그림 폭에 맞춰 .tab-ico-키 에 칸 너비 보정을 추가 (디자인 가이드 ⑦) */
-.tab-ico-movies,.tab-ico-tips{width:calc(1.2em - 2px)}
+.tab-ico-movies,.tab-ico-tips,.tab-ico-study{width:calc(1.2em - 2px)}
+/* 📱는 그림 폭 12px라 양옆 2.5px씩 좁힘 */
+.tab-ico-apps{width:calc(1.2em - 5px)}
 
 /* 필터 */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}
@@ -391,6 +393,47 @@ a.study-card:focus-visible{outline:2px solid var(--brand-orange);outline-offset:
 @media(max-width:940px){.movie-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:780px){.movie-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}.m-title{font-size:15px}.m-review{font-size:13px}}
 
+/* 콘텐츠 › 웹툰: 가로 카드에서는 세로 표지(1:1.3), 웹툰만 볼 때는 2열 표지 그리드 */
+.s-webtoon{flex:none;width:56px;height:73px;border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px #0000001a,2px 3px 8px #0000002a;background:var(--frame)}
+.s-webtoon img{display:block;width:100%;height:100%;object-fit:cover}
+.s-kind.webtoon{color:#00A94F}
+/* 유튜브 개별 영상: 16:9 썸네일 + 빨간 재생 버튼, 제목은 2줄까지 */
+.study-card.is-video{align-items:flex-start}
+.s-video{flex:none;position:relative;width:112px;height:63px;border-radius:8px;overflow:hidden;background:#000;margin-top:2px}
+.s-video img{display:block;width:100%;height:100%;object-fit:cover}
+.s-play{position:absolute;left:50%;top:50%;width:34px;height:24px;margin:-12px 0 0 -17px;border-radius:7px;background:#FF0000E6}
+.s-play::after{content:"";position:absolute;left:13px;top:6px;border-left:9px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.s-clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.webtoon-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px 18px;align-items:start}
+.w-card{display:flex;flex-direction:column;gap:4px;min-width:0;color:inherit;text-decoration:none}
+.w-cover{display:block;width:100%;height:0;padding-top:129.8%;position:relative;border-radius:8px;overflow:hidden;box-shadow:4px 5px 12px #0000002e;background:var(--frame);margin-bottom:12px}
+.w-cover img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+.w-card:hover .w-cover{box-shadow:0 0 0 2px var(--brand-orange),4px 5px 12px #0000002e}
+.w-kind{font-family:var(--f-en);font-weight:700;font-size:11px;letter-spacing:.12em;color:#00A94F;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.w-title{font-family:var(--f-title);font-weight:800;font-size:16px;line-height:1.4;word-break:keep-all}
+.w-author{font-size:12.5px;color:var(--soft)}
+@media(max-width:1100px){.webtoon-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:940px){.webtoon-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:780px){.webtoon-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px}.w-title{font-size:15px}}
+
+/* 앱: 둥근 사각형 아이콘 + 글 + 기기에 맞는 스토어 버튼 */
+.app-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start}
+.app-card{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;padding:16px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+.app-icon{width:64px;height:64px;border-radius:15px;box-shadow:0 0 0 1px #0000001a;object-fit:cover;background:var(--frame)}
+.app-ph{display:grid;place-items:center;font-size:28px}
+.app-body{min-width:0;display:flex;flex-direction:column;gap:2px}
+.app-kind{font-family:var(--f-en);font-weight:700;font-size:10.5px;letter-spacing:.14em;color:var(--soft)}
+.app-body b{font-family:var(--f-title);font-weight:800;font-size:17px;line-height:1.35;word-break:keep-all}
+.app-body small{font-size:12.5px;color:var(--soft)}
+.app-body .hint{margin-top:4px}
+.app-about{margin:4px 0 0;font-size:13px;line-height:1.55;color:var(--ink);word-break:keep-all}
+.stores{grid-column:1/-1;display:flex;gap:8px}
+.store{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;min-height:42px;border-radius:10px;font-size:13.5px;font-weight:700;background:var(--brand-black);color:#fff;text-decoration:none;border:1.5px solid var(--brand-black)}
+.store.light{background:transparent;color:var(--ink)}
+.store:hover{border-color:var(--brand-orange)}
+.store svg{width:17px;height:17px;fill:currentColor;flex:none}
+@media(max-width:780px){.app-list{grid-template-columns:1fr}}
+
 /* 꿀팁: 블로그 글을 큰 썸네일 카드로. 누르면 상세 창 없이 블로그 글로 바로 이동 (새 창) */
 .blog-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
 .blog-card{display:flex;flex-direction:column;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;color:inherit;text-decoration:none}
@@ -533,7 +576,7 @@ function openAbout(){
     ?`<a class="${i===0?'primary':''}" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)} ↗</a>`
     :`<span title="데이터의 links에 주소를 넣으면 버튼이 활성화돼요">${esc(l.label)} · 주소 입력 필요</span>`).join('');
   // 콘텐츠 수는 데이터에서 자동으로 셈
-  const counts=[['📚','권의 책',books],['🎬','편의 영화',movies],['🎓','개의 강의',courses],['▶️','개의 채널',youtube],['🧸','개의 용품',goods],['📝','개의 후기',SHOW_TIPS?blogs:[]]]
+  const counts=[['📚','권의 책',books],['🎬','편의 영화',movies],['🎓','개의 강의',courses],['🎧','편의 웹툰',webtoons],['▶️','개의 채널',youtube],['🧸','개의 용품',goods],['📱','개의 앱',apps],['📝','개의 후기',SHOW_TIPS?blogs:[]]]
     .filter(c=>c[2].length).map(c=>`<span>${c[0]} ${c[2].length}${c[1]}</span>`).join('');
   lastFocus=document.activeElement;
   $('detail').innerHTML=`<div class="about-sheet">
@@ -612,7 +655,7 @@ const movies=[
  {"tmdb": "239017", "tv": true, "poster": "https://image.tmdb.org/t/p/w500/tL1eC3u7MO7PzDqFhEeAkZZYfO5.jpg", "title": "결혼까진 했는데...요!", "original": "童話故事下集", "year": "2025", "theme": "", "hint": "결혼의 의미를 가볍게 돌아볼 때", "url": "https://www.themoviedb.org/tv/239017?language=ko", "review": "", "kind": "드라마"},
  {"tmdb": "804095", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/zcpxI4YYFXd2aS1wffa5usKFFbq.jpg", "title": "파벨만스", "original": "The Fabelmans", "year": "2022", "theme": "", "hint": "부모의 꿈과 아이의 꿈 사이를 생각해 볼 때", "url": "https://www.themoviedb.org/movie/804095-the-fabelmans?language=ko", "review": "", "kind": "영화"},
  {"tmdb": "394117", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/nwSrKv3tzo4HqkgMj3ZwfAC4VYT.jpg", "title": "플로리다 프로젝트", "original": "The Florida Project", "year": "2017", "theme": "", "hint": "아이의 눈으로 세상을 바라보고 싶을 때", "url": "https://www.themoviedb.org/movie/394117-the-florida-project?language=ko", "review": "", "kind": "영화"},
- {"tmdb": "2517", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/vAO1YIM3TzeKOJr4DVxvKHuND2w.jpg", "title": "아무도 모른다", "original": "誰も知らない", "year": "2004", "theme": "", "hint": "아이에게 어른의 돌봄이 얼마나 필요한지 돌아볼 때", "url": "https://www.themoviedb.org/movie/2517?language=ko", "review": "", "kind": "영화"}
+ {"tmdb": "2517", "tv": false, "poster": "https://image.tmdb.org/t/p/w500/vAO1YIM3TzeKOJr4DVxvKHuND2w.jpg", "title": "아무도 모른다", "original": "誰も知らない", "year": "2004", "theme": "", "hint": "돌봄에 대해서 생각할 때", "url": "https://www.themoviedb.org/movie/2517?language=ko", "review": "", "kind": "영화"}
 ];
 const courses=[
  {"title": "AMI 몬테소리 0–3세 오리엔테이션", "provider": "AMI Montessori Center Korea", "theme": "0–3세 교육 · 교사 과정", "hint": "육아휴직 중 깊이 있게 육아 공부하고 싶을 때", "url": "https://www.ami-korea.net/diploma-course", "info": "", "review": ""},
@@ -625,10 +668,10 @@ const courses=[
    ※ 채널 이름·프로필 이미지는 2026-10-01에 각 채널 페이지에서 확인한 값
    ※ theme·hint는 예시 문구 → 직접 수정 */
 const youtube=[
- {"url": "https://www.youtube.com/@o2brothersTV", "title": "산소형제TV", "handle": "@o2brothersTV", "avatar": "https://yt3.googleusercontent.com/6-X6m48LPJqUfqQQVjEFEyPNOLB8NWsNNxMWwpeae8xgeQ5MM50jPyPTzBp_vA5jaY7nurlksnE=s240-c-k-c0x00ffffff-no-rj", "theme": "임신·출산 · 아이 건강", "hint": "아이 건강이 걱정될 때 의사의 설명을 듣고 싶을 때", "about": "산부인과·소아과 전문의 형제가 육아와 아이 건강 이야기를 쉽게 풀어 주는 채널이에요.", "medical": true, "review": ""},
- {"url": "https://www.youtube.com/@dr.ko_pediatric_pt", "title": "고박사의 미국소아물리치료", "handle": "@dr.ko_pediatric_pt", "avatar": "https://yt3.googleusercontent.com/ixGeE4gLt4rTWcr_v2bIyaSlTqf7TFhiI8iDkdxoYLDfh8wj2KGfKaJuercfjy-OvHDAUfHB=s240-c-k-c0x00ffffff-no-rj", "theme": "대근육 발달 · 놀이 운동", "hint": "뒤집기·기기·걷기 발달이 궁금할 때", "about": "소아 물리치료사가 집에서 따라 할 수 있는 놀이식 운동과 대근육 발달 이야기를 알려 주는 채널이에요.", "medical": true, "review": ""},
- {"url": "https://www.youtube.com/@%ED%95%98%EC%A0%95%ED%9B%88%EC%9D%98%EC%82%90%EB%BD%80%EC%82%90%EB%BD%80119%EC%86%8C", "title": "하정훈의 삐뽀삐뽀 119", "handle": "@하정훈의삐뽀삐뽀119소", "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_l7w-A0kB7-I22WePYZSzeJ0fJp84qw8WGUop8xNWeoh0w=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "아이가 아플 때 소아과 의사의 설명이 필요할 때", "about": "", "medical": false, "review": ""},
- {"url": "https://www.youtube.com/@horme_montessori", "title": "호르메몬테소리", "handle": "@horme_montessori", "avatar": "https://yt3.googleusercontent.com/kKWFlZ5FEPFzfAHiLpT2MWHQciK7ivcVE37V9DNuaLu3y7XYWx8nFT1f-bwpLJl5yuueoeo-=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "집에서 몬테소리 환경을 꾸며 보고 싶을 때", "about": "", "medical": false, "review": ""}
+ {"url": "https://www.youtube.com/@o2brothersTV", "video": "", "title": "산소형제TV", "channel": "", "handle": "@o2brothersTV", "avatar": "https://yt3.googleusercontent.com/6-X6m48LPJqUfqQQVjEFEyPNOLB8NWsNNxMWwpeae8xgeQ5MM50jPyPTzBp_vA5jaY7nurlksnE=s240-c-k-c0x00ffffff-no-rj", "theme": "임신·출산 · 아이 건강", "hint": "아이 건강이 걱정될 때 의사의 설명을 듣고 싶을 때", "about": "산부인과·소아과 전문의 형제가 육아와 아이 건강 이야기를 쉽게 풀어 주는 채널이에요.", "medical": true, "review": ""},
+ {"url": "https://www.youtube.com/@dr.ko_pediatric_pt", "video": "", "title": "고박사의 미국소아물리치료", "channel": "", "handle": "@dr.ko_pediatric_pt", "avatar": "https://yt3.googleusercontent.com/ixGeE4gLt4rTWcr_v2bIyaSlTqf7TFhiI8iDkdxoYLDfh8wj2KGfKaJuercfjy-OvHDAUfHB=s240-c-k-c0x00ffffff-no-rj", "theme": "대근육 발달 · 놀이 운동", "hint": "뒤집기·기기·걷기 발달이 궁금할 때", "about": "소아 물리치료사가 집에서 따라 할 수 있는 놀이식 운동과 대근육 발달 이야기를 알려 주는 채널이에요.", "medical": true, "review": ""},
+ {"url": "https://www.youtube.com/@%ED%95%98%EC%A0%95%ED%9B%88%EC%9D%98%EC%82%90%EB%BD%80%EC%82%90%EB%BD%80119%EC%86%8C", "video": "", "title": "하정훈의 삐뽀삐뽀 119", "channel": "", "handle": "@하정훈의삐뽀삐뽀119소", "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_l7w-A0kB7-I22WePYZSzeJ0fJp84qw8WGUop8xNWeoh0w=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "아이가 아플 때 소아과 의사의 설명이 필요할 때", "about": "", "medical": false, "review": ""},
+ {"url": "https://www.youtube.com/@horme_montessori", "video": "", "title": "호르메몬테소리", "channel": "", "handle": "@horme_montessori", "avatar": "https://yt3.googleusercontent.com/kKWFlZ5FEPFzfAHiLpT2MWHQciK7ivcVE37V9DNuaLu3y7XYWx8nFT1f-bwpLJl5yuueoeo-=s240-c-k-c0x00ffffff-no-rj", "theme": "", "hint": "집에서 몬테소리 환경을 꾸며 보고 싶을 때", "about": "", "medical": false, "review": ""}
 ];
 
 /* 꿀팁: 직접 쓰는 글
@@ -657,15 +700,35 @@ const goods=[
  {"url": "https://blog.naver.com/midori_777/223740349519", "title": "이유식 용품 모음", "hint": "이유식을 처음 시작할 때", "thumb": "https://blogthumb.pstatic.net/MjAyNTAxMjdfMTIw/MDAxNzM3OTY0NDU4NDUz.f2Np2eJv1vpuHG5Od8jMHHkgpJ2mBkBmgSwifRYG-9sg.-3g8h6R_4TNRKvPa985gZyb2yBVptpOQxX7ERoD7ySkg.JPEG/IMG_9494.JPG?type=w2", "date": "2025.01.27", "topic": ""},
  {"url": "https://blog.naver.com/midori_777/224096033921", "title": "숲소리 장난감", "hint": "돌 아기 장난감 고민될 때", "thumb": "https://blogthumb.pstatic.net/MjAyNTEyMDJfMTA0/MDAxNzY0NjgwNjAzOTQw.flPplhnXD1RlE5zJaUp6HMwIISITCjeck71-A6i_O84g.6Da397Lob27YyxUGU5aNAMvyvCxj9yVlQSGjgkWkeBkg.JPEG/IMG%A3%DF3882.JPG?type=w2", "date": "2025.12.02", "topic": ""}
 ];
+/* 콘텐츠 탭의 웹툰: 시트 '웹툰' 탭 (제목·작가·연재·표지는 웹툰 주소를 보고 채워 둠) */
+const webtoons=[
+ {"url": "https://comic.naver.com/webtoon/list?titleId=812354", "hint": "육아 현실에 웃으며 공감하고 싶을 때", "title": "육아일기", "author": "자까", "days": "목, 일 연재", "cover": "https://image-comic.pstatic.net/webtoon/812354/thumbnail/thumbnail_IMAG21_2896806f-bd3e-48af-b7e2-8e380ff702a4.jpg"},
+ {"url": "https://comic.naver.com/webtoon/list?titleId=817945", "hint": "어린이집 보내기 전, 선생님의 하루가 궁금할 때", "title": "어린이집 다니는 구나", "author": "구나", "days": "월, 수 연재", "cover": "https://image-comic.pstatic.net/webtoon/817945/thumbnail/thumbnail_IMAG21_c90a6d9e-3df5-41c4-b11a-7c6e61a89174.jpg"},
+ {"url": "https://comic.naver.com/webtoon/list?titleId=840736", "hint": "가족의 의미를 따뜻하게 느끼고 싶을 때", "title": "위탁가족!", "author": "조똘복", "days": "토요웹툰", "cover": "https://image-comic.pstatic.net/webtoon/840736/thumbnail/thumbnail_IMAG21_751b8649-6779-4090-afc8-21e4ce0550a2.jpg"}
+];
+/* 앱 탭: 시트 '앱' 탭 (아이콘·스토어 주소·개발사는 앱 이름을 보고 채워 둠) */
+const apps=[
+ {"title": "똑닥", "hint": "아이가 아파서 소아과 대기가 걱정될 때", "about": "병원 접수와 예약을 미리 하고, 실시간 대기 순서를 확인해요.", "topic": "병원", "ios": "https://apps.apple.com/kr/app/id1014889755", "android": "https://play.google.com/store/apps/details?id=com.bbros.sayup", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/29/72/392972b3-9ad3-6e6f-45a6-e3343294e004/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg", "dev": "B-BROS"},
+ {"title": "열나요", "hint": "아이 열과 해열제 먹인 시간을 기록하고 싶을 때", "about": "체온과 해열제 복용 기록을 남기고, 열 관리 방법을 안내받아요.", "topic": "건강 기록", "ios": "https://apps.apple.com/kr/app/id1404162830", "android": "https://play.google.com/store/apps/details?id=com.appmd.fever", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/02/d0/ef/02d0eff8-14fc-5d7a-cd09-ab83c0315217/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg", "dev": "Mobiledoctor Inc."},
+ {"title": "베이비타임", "hint": "수유·수면·기저귀 기록을 한곳에 남기고 싶을 때", "about": "수유, 수면, 기저귀, 성장 기록을 남기고 통계로 아기 패턴을 확인해요.", "topic": "육아 기록", "ios": "https://apps.apple.com/kr/app/id1052459780", "android": "https://play.google.com/store/apps/details?id=yducky.application.babytime", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/fd/5c/ca/fd5cca20-edbd-0fcb-f697-142c5bca13f7/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg", "dev": "Simfler Inc."},
+ {"title": "베베스냅", "hint": "육아 기록과 함께 궁금한 점을 바로 물어보고 싶을 때", "about": "수유·수면 기록을 남기고, AI 육아 비서에게 아기 상태를 물어볼 수 있어요.", "topic": "육아 기록", "ios": "https://apps.apple.com/kr/app/id6504923537", "android": "https://play.google.com/store/apps/details?id=com.ru.bebesnap", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0f/ed/6c/0fed6caa-e5ad-19ec-44e0-c8af32933121/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg", "dev": "BebeSnap"},
+ {"title": "키즈노트", "hint": "어린이집·유치원 알림장을 확인할 때", "about": "어린이집·유치원 알림장, 공지, 사진 앨범을 선생님과 주고받아요.", "topic": "어린이집", "ios": "https://apps.apple.com/kr/app/id527574743", "android": "https://play.google.com/store/apps/details?id=com.vaultmicro.kidsnote", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b7/0e/97/b70e9786-1130-dde2-9dd0-4448f63e9b4f/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg", "dev": "Kidsnote, Inc"},
+ {"title": "아이사랑", "hint": "어린이집을 찾거나 입소 대기를 신청할 때", "about": "정부 공식 앱으로 어린이집 검색, 입소 대기 신청, 보육 정보를 확인해요.", "topic": "어린이집", "ios": "https://apps.apple.com/kr/app/id490070696", "android": "https://play.google.com/store/apps/details?id=com.mw.Android_KidsLove2", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/12/1e/ad/121eadb7-ec9b-da9b-35f3-80dffd6ce596/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.jpg", "dev": "Ministry of Health and Welfare"},
+ {"title": "베이비빌리", "hint": "임신 주수·아기 개월 수에 맞는 정보가 필요할 때", "about": "임신 준비부터 출산, 육아까지 시기에 맞는 정보를 받고 다른 엄빠들과 이야기 나눠요.", "topic": "육아 정보", "ios": "https://apps.apple.com/kr/app/id1497301126", "android": "https://play.google.com/store/apps/details?id=kr.villagebaby.billyapplication", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/16/48/a5/1648a5fe-9264-a5ec-c1c8-5b05b85c0f94/Basic-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.jpg", "dev": "VillageBaby Inc"},
+ {"title": "차이의 놀이", "hint": "오늘 아이와 뭐 하고 놀지 고민될 때", "about": "0~7세 연령에 맞는 집콕 놀이 방법을 알려 줘요.", "topic": "놀이", "ios": "https://apps.apple.com/kr/app/id1134836561", "android": "https://play.google.com/store/apps/details?id=com.havit.android", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/a4/e2/b2/a4e2b272-116c-323b-fe02-e229e32e308c/AppIcon-1x_U007emarketing-0-6-0-85-220.jpeg/512x512bb.jpg", "dev": "Havit Inc."},
+ {"title": "쑥쑥찰칵", "hint": "아기 사진을 가족과 함께 보고 싶을 때", "about": "아기 사진을 올리면 가족에게 자동 공유되고 날짜별로 정리돼요.", "topic": "사진 공유", "ios": "https://apps.apple.com/kr/app/id1509183009", "android": "https://play.google.com/store/apps/details?id=com.jejememe.daybabyday", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/55/da/b8/55dab871-e9ba-b925-2574-8ba86a21a30b/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/512x512bb.jpg", "dev": "JEJEMEME Inc."},
+ {"title": "EPIC", "hint": "아이와 영어 그림책을 함께 읽고 싶을 때", "about": "아이들을 위한 영어 그림책·오디오북을 나이에 맞게 골라 읽을 수 있는 디지털 도서관이에요.", "topic": "영어 그림책", "ios": "https://apps.apple.com/kr/app/id719219382", "android": "https://play.google.com/store/apps/details?id=com.getepic.Epic", "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b6/a5/d0/b6a5d0ec-9fc2-b870-4d4e-3be3066d6c44/AppIcon-0-0-1x_U007epad-0-1-0-85-220.png/512x512bb.jpg", "dev": "Epic Creations, Inc."}
+];
 
 const TABS=[
- // 탭 순서: 도서 · 영화 · 용품 · 학습 · 후기 (key는 내부 이름이라 그대로 둠: tips = 후기)
- {key:'books',label:'📚 도서',items:books,unit:'권의 도서',source:'도서 표지 및 상품 정보 출처: YES24 · 표지를 누르면 자세한 정보를 볼 수 있어요.'},
+ // 탭 순서: 책 · 영화 · 앱 · 콘텐츠 · 용품 · 후기 (key는 내부 이름이라 그대로 둠: study = 콘텐츠, tips = 후기)
+ {key:'books',label:'📚 책',items:books,unit:'권의 책',source:'도서 표지 및 상품 정보 출처: YES24 · 표지를 누르면 자세한 정보를 볼 수 있어요.'},
  {key:'movies',label:'🎬 영화',items:movies,unit:'편의 영화·드라마',source:'영화 정보와 포스터 출처: TMDB · This product uses the TMDB API but is not endorsed or certified by TMDB.'},
+ {key:'apps',label:'📱 앱',items:apps,unit:'개의 앱',source:'앱 정보와 아이콘 출처: App Store · Google Play · 버튼을 누르면 스토어에서 열려요.'},
+ // 콘텐츠: 시트의 유튜브·강의·웹툰 탭을 사이트에서만 한 탭으로 묶음 (_kind로 구분)
+ {key:'study',label:'🎧 콘텐츠',get items(){return [...youtube.map(y=>({...y,_kind:'youtube'})),...courses.map(c=>({...c,_kind:'courses'})),...webtoons.map(w=>({...w,_kind:'webtoon'}))];},
+  unit:'개의 콘텐츠',source:'유튜브·네이버 웹툰은 각 서비스에서 열려요 · 웹툰 정보와 표지 출처: 네이버 웹툰 · 강의 모집 일정과 비용은 각 운영기관 공식 페이지에서 확인하세요.'},
  {key:'goods',label:'🧸 용품',items:goods,unit:'개의 용품 이야기',source:'직접 써 본 육아용품 블로그 글이에요 · 카드를 누르면 네이버 블로그에서 열려요.'},
- // 학습: 시트의 유튜브 탭 + 강의 탭을 사이트에서만 한 탭으로 묶음 (_kind로 구분)
- {key:'study',label:'🎓 학습',get items(){return [...youtube.map(y=>({...y,_kind:'youtube'})),...courses.map(c=>({...c,_kind:'courses'}))];},
-  unit:'개의 학습 자료',source:'유튜브 영상은 유튜브에서 열려요 · 강의 모집 일정과 비용은 각 운영기관 공식 페이지에서 확인하세요.'},
  {key:'tips',label:'📝 후기',items:blogs,unit:'개의 후기',source:'직접 경험을 바탕으로 쓴 블로그 글이에요 · 카드를 누르면 네이버 블로그에서 열려요.'}
 ];
 // 꿀팁 탭 보이기 (false로 바꾸면 숨김)
@@ -682,7 +745,7 @@ function buildCats(){
   if(!CATS.includes(cat))cat='전체';
 }
 const MEDICAL=['임신·출산','건강·돌봄','수면·생활'];
-const ICON={books:'📚',movies:'🎬',courses:'🎓',youtube:'▶️',study:'🎓',tips:'📝',goods:'🧸'};
+const ICON={books:'📚',movies:'🎬',courses:'🎓',youtube:'▶️',study:'🎧',tips:'📝',goods:'🧸',apps:'📱'};
 // 학습 탭 안의 구분: all | youtube | courses
 let studyKind='all';
 // 영화 탭 안의 분류: 시트 '분류' 칸 (비어 있으면 TMDB 주소로 판단: TV → 드라마, 그 외 → 영화)
@@ -700,7 +763,8 @@ const catName=c=>c.replace(/^\S+\s/,'');
 
 function matches(it){
   if(!q) return true;
-  const hay=norm([it.title,it.author,it.original,it.provider,it.handle,it.about,it.topic,(it.points||[]).join(' '),it.fact,it.body,it.category,it.theme,it.hint,it.review].join(' '));
+  // 검색 대상: 제목·저자·주제·이럴 때 보세요·한줄평(추천 이유)·소개 글 등 화면에 보이는 글 전체
+  const hay=norm([it.title,it.author,it.original,it.provider,it.handle,it.channel,it.dev,it.about,it.topic,(it.points||[]).join(' '),it.fact,it.body,it.category,it.theme,it.hint,it.review,it.days,it.kind].join(' '));
   return hay.includes(norm(q));
 }
 // 접속(새로고침)할 때마다 새로 뽑는 숫자와 콘텐츠를 섞어 만든 값 → 들어올 때마다 순서가 바뀜
@@ -717,7 +781,7 @@ function current(){
   // 도서·영화·용품·후기: 접속할 때마다 랜덤, 강력 추천은 항상 맨 앞(강력 추천끼리도 섞음)
   // 학습 탭은 시트의 순서 그대로
   let items=t.items.filter(matches);
-  if(tab==='books'||tab==='movies'||tab==='goods'||tab==='tips'){
+  if(tab==='books'||tab==='movies'||tab==='goods'||tab==='tips'||tab==='apps'){
     items=items.slice().sort((a,b)=>((b.pick?1:0)-(a.pick?1:0))||(dailyKey(a)-dailyKey(b)));
   }
   if(tab==='books' && cat!=='전체'){
@@ -769,7 +833,7 @@ function renderFilters(){
   if(tab==='study'){
     // 공부 탭: 전체 / 유튜브 / 강의 선택 버튼
     const all=TABS.find(t=>t.key==='study').items.filter(matches);
-    const opts=[['all','전체',all.length],['youtube','유튜브',all.filter(x=>x._kind==='youtube').length],['courses','강의',all.filter(x=>x._kind==='courses').length]];
+    const opts=[['all','전체',all.length],['youtube','유튜브',all.filter(x=>x._kind==='youtube').length],['courses','강의',all.filter(x=>x._kind==='courses').length],['webtoon','웹툰',all.filter(x=>x._kind==='webtoon').length]].filter(o=>o[0]==='all'||o[2]>0);
     f.innerHTML=opts.map(([k,l,n])=>`<button type="button" data-sk="${k}" aria-pressed="${k===studyKind}">${l} <span class="seg-n">${n}</span></button>`).join('');
     f.querySelectorAll('button').forEach(b=>b.onclick=()=>{studyKind=b.dataset.sk;render();$('filters').querySelector(`[data-sk="${studyKind}"]`).focus();});
     return;
@@ -813,17 +877,36 @@ function courseIcon(it){
   const s=`${it.title||''} ${it.theme||''}`;
   return /몬테소리/.test(s)?'🧩':/영어|그림책/.test(s)?'📖':/수면/.test(s)?'🌙':/요리|이유식|식사/.test(s)?'🥣':'🎓';
 }
+// 웹툰 표지: ① 사이트에 저장한 표지(thumbs/wt_작품번호.jpg) → ② 네이버 원본 → ③ 브랜드 대체 이미지
+function webtoonImg(it){
+  const no=(String(it.url).match(/titleId=(\d+)/)||[])[1];
+  const first=no?`thumbs/wt_${no}.jpg`:(it.cover||BLOG_FALLBACK);
+  return `<img src="${esc(first)}" alt="" loading="lazy" referrerpolicy="no-referrer" data-naver="${no?esc(it.cover||''):''}" onerror="blogThumbError(this)">`;
+}
 function studyCard(it,i){
-  const yt=it._kind==='youtube';
-  const circle=yt
-    ?`<span class="s-circle yt"><span class="s-ph" aria-hidden="true">▶</span>${it.avatar?`<img src="${esc(it.avatar)}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`
+  const yt=it._kind==='youtube', wt=it._kind==='webtoon', vid=yt&&it.video;
+  // 유튜브 영상: 16:9 썸네일 + 재생 버튼 (유튜브 공식 썸네일이라 따로 저장하지 않음)
+  if(vid) return `<a class="study-card is-video" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(it.title)} 유튜브 영상 새 창으로 열기">
+    <span class="s-video"><img src="https://i.ytimg.com/vi/${esc(it.video)}/mqdefault.jpg" alt="" loading="lazy"><span class="s-play" aria-hidden="true"></span></span>
+    <span class="s-body"><span class="s-kind yt">YOUTUBE · 영상</span><b class="s-clamp">${esc(it.title)}</b>${it.channel?`<small>${esc(it.channel)}</small>`:''}${it.hint?`<span class="hint">${esc(it.hint)}</span>`:''}</span><span class="s-go" aria-hidden="true">↗</span></a>`;
+  const circle=wt?`<span class="s-webtoon">${webtoonImg(it)}</span>`
+    :yt?`<span class="s-circle yt"><span class="s-ph" aria-hidden="true">▶</span>${it.avatar?`<img src="${esc(it.avatar)}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>`
     :`<span class="s-circle course" aria-hidden="true">${courseIcon(it)}</span>`;
-  const sub=yt?[it.handle,it.theme].filter(Boolean).join(' · '):[it.provider,it.theme].filter(Boolean).join(' · ');
-  // 상세 창 없이 유튜브 채널·운영기관 페이지로 바로 이동 (새 창)
+  const sub=wt?[it.author,it.days].filter(Boolean).join(' · '):yt?[it.handle,it.theme].filter(Boolean).join(' · '):[it.provider,it.theme].filter(Boolean).join(' · ');
+  const kind=wt?'WEBTOON':yt?'YOUTUBE · 채널':'COURSE';
+  // 상세 창 없이 유튜브 채널·운영기관·네이버 웹툰 페이지로 바로 이동 (새 창)
   const tag=it.url?`a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer"`:'div';
   const end=it.url?'a':'div';
-  return `<${tag} class="study-card" aria-label="${esc(it.title)} ${yt?'유튜브 채널':'강의 페이지'} 새 창으로 열기">${circle}
-    <span class="s-body"><span class="s-kind ${yt?'yt':''}">${yt?'YOUTUBE':'COURSE'}</span><b>${esc(it.title)}</b>${sub?`<small>${esc(sub)}</small>`:''}${it.hint?`<span class="hint">${esc(it.hint)}</span>`:''}</span>${it.url?'<span class="s-go" aria-hidden="true">↗</span>':''}</${end}>`;
+  return `<${tag} class="study-card" aria-label="${esc(it.title)} ${wt?'네이버 웹툰':yt?'유튜브 채널':'강의 페이지'} 새 창으로 열기">${circle}
+    <span class="s-body"><span class="s-kind ${wt?'webtoon':yt?'yt':''}">${kind}</span><b>${esc(it.title)}</b>${sub?`<small>${esc(sub)}</small>`:''}${it.hint?`<span class="hint">${esc(it.hint)}</span>`:''}</span>${it.url?'<span class="s-go" aria-hidden="true">↗</span>':''}</${end}>`;
+}
+// 콘텐츠 › 웹툰만 볼 때: 영화 탭처럼 2열 표지 그리드 (누르면 네이버 웹툰 새 창)
+function webtoonCard(it){
+  const days=String(it.days||'').replace(/\s*연재$/,'').replace(/요웹툰$/,'');
+  return `<a class="w-card" href="${esc(it.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(it.title)} 네이버 웹툰 새 창으로 열기">
+    <span class="w-cover">${webtoonImg(it)}</span>
+    <span class="w-kind">${esc(['WEBTOON',days].filter(Boolean).join(' · '))}</span><b class="w-title">${esc(it.title)}</b>
+    ${it.author?`<small class="w-author">${esc(it.author)}</small>`:''}${it.hint?`<p class="m-hint">${esc(it.hint)}</p>`:''}</a>`;
 }
 // 영화·드라마: 포스터 + '이럴 때 보세요'만. 상세 창과 외부 링크 없음 (한줄평은 1차 버전에서 쓰지 않음)
 function movieCard(it){
@@ -860,6 +943,23 @@ function blogCard(it){
     <span class="blog-thumb">${thumb}</span>
     <span class="blog-body"><span class="blog-kind">NAVER BLOG</span><b>${esc(it.title)}</b>${it.hint?`<span class="hint">${esc(it.hint)}</span>`:''}
       <span class="blog-foot"><span class="date">${esc(it.date)}</span><span class="go">블로그에서 읽기 ↗</span></span></span></a>`;
+}
+// 앱: 보는 기기에 맞는 스토어 버튼만 (아이폰·아이패드 → App Store, 안드로이드 → Google Play, PC → 둘 다)
+const DEVICE=(()=>{const u=navigator.userAgent||'';
+  if(/iPhone|iPad|iPod/.test(u)||(/Macintosh/.test(u)&&navigator.maxTouchPoints>1))return 'ios';
+  return /Android/.test(u)?'android':'pc';})();
+const ICON_APPLE='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8 1.5 0 1.9.8 3.2.8 1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.5-1-2.5-3.9zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>';
+const ICON_PLAY='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3c-.3.3-.4.7-.4 1.2v17c0 .5.1.9.4 1.2l9.6-9.7-9.6-9.7zm10.6 10.7l2.9 2.9-11.3 6.5 8.4-9.4zm0-2l-8.4-9.4 11.3 6.5-2.9 2.9zm3.9 4.4l-3.1-3.4 3.1-3.4 3.4 2c.9.5.9 1.3 0 1.8l-3.4 2.9z"/></svg>';
+function appCard(it){
+  const ios=it.ios?`<a class="store" href="${esc(it.ios)}" target="_blank" rel="noopener noreferrer">${ICON_APPLE}${DEVICE==='pc'?'App Store':'App Store에서 받기'}</a>`:'';
+  const and=it.android?`<a class="store${DEVICE==='pc'?' light':''}" href="${esc(it.android)}" target="_blank" rel="noopener noreferrer">${ICON_PLAY}${DEVICE==='pc'?'Google Play':'Google Play에서 받기'}</a>`:'';
+  // 기기에 맞는 스토어 링크가 없으면 있는 쪽을 보여 줌
+  const btns=DEVICE==='ios'?(ios||and):DEVICE==='android'?(and||ios):ios+and;
+  const icon=it.icon?`<img class="app-icon" src="${esc(it.icon)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'app-icon app-ph',textContent:'📱'}))">`:'<span class="app-icon app-ph">📱</span>';
+  return `<article class="app-card">${icon}
+    <div class="app-body"><span class="app-kind">${esc(['APP',it.topic].filter(Boolean).join(' · '))}</span><b>${esc(it.title)}</b>${it.dev?`<small>${esc(it.dev)}</small>`:''}
+      ${it.hint?`<span class="hint">${esc(it.hint)}</span>`:''}${it.about?`<p class="app-about">${esc(it.about)}</p>`:''}</div>
+    ${btns?`<div class="stores">${btns}</div>`:''}</article>`;
 }
 function emptyState(t){
   if(!t.items.length) return `<div class="empty"><span class="big">${ICON[tab]}</span><strong>곧 채워질 예정이에요</strong><p>좋았던 ${t.label.replace(/^\S+\s/,'')} 추천을 준비하고 있어요.<br>그동안 다른 추천을 둘러보세요.</p>${suggestions()}</div>`;
@@ -899,8 +999,8 @@ function render(){
   $('count').textContent=`${ICON[tab]} ${items.length}${t.unit}${q?` · ‘${q}’ 검색 결과`:''}`;
   $('list-title').textContent=`${t.label.replace(/^\S+\s/,'')} 목록`;
   const list=$('list');
-  list.className=tab==='books'?'shelf':tab==='movies'?'movie-grid':tab==='study'?'study-list':(tab==='tips'||tab==='goods')?'blog-list':'media-list';
-  list.innerHTML=items.length?items.map(tab==='books'?bookCard:(tab==='tips'||tab==='goods')?blogCard:tab==='movies'?movieCard:tab==='study'?studyCard:mediaCard).join(''):emptyState(t);
+  list.className=tab==='books'?'shelf':tab==='movies'?'movie-grid':tab==='study'?(studyKind==='webtoon'?'webtoon-grid':'study-list'):(tab==='tips'||tab==='goods')?'blog-list':tab==='apps'?'app-list':'media-list';
+  list.innerHTML=items.length?items.map(tab==='books'?bookCard:(tab==='tips'||tab==='goods')?blogCard:tab==='apps'?appCard:tab==='movies'?movieCard:tab==='study'?(studyKind==='webtoon'?webtoonCard:studyCard):mediaCard).join(''):emptyState(t);
   if(!items.length) list.className='media-list';
   $('source').textContent=t.source;
 
@@ -1076,7 +1176,7 @@ async function loadTab(name){
   const [head,...body]=parseCSV(await res.text());
   const keys=head.map(h=>h.trim());
   // 탭 이름이 틀리면 구글이 오류 대신 첫 번째 탭을 보내 주므로, 제목 줄로 맞는 탭인지 확인
-  const need={'책':'YES24 주소','영화':'TMDB 주소','강의':'과정명','유튜브':'채널 주소','꿀팁':'체크리스트','블로그':'블로그 주소','용품':'블로그 주소','소개':'항목'}[name];
+  const need={'책':'YES24 주소','영화':'TMDB 주소','강의':'과정명','유튜브':'채널 주소','꿀팁':'체크리스트','블로그':'블로그 주소','용품':'블로그 주소','앱':'앱 이름','웹툰':'웹툰 주소','소개':'항목'}[name];
   if(need&&!keys.includes(need)) throw new Error(`'${name}' 탭을 찾지 못했어요 (탭 이름이나 첫 줄이 바뀌었는지 확인)`);
   return body.map(r=>Object.fromEntries(keys.map((k,i)=>[k,(r[i]||'').trim()])));
 }
@@ -1087,6 +1187,7 @@ const yes24Id=u=>(String(u).match(/goods\/(\d+)/)||[])[1];
 // TMDB 영화(/movie/)와 TV 시리즈(/tv/) 주소 모두 지원
 const tmdbId=u=>(String(u).match(/\/(?:movie|tv)\/(\d+)/)||[])[1];
 const isTv=u=>/\/tv\/\d+/.test(String(u));
+const ytVideoId=u=>(String(u).match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|live\/)|youtu\.be\/)([\w-]{11})/)||[])[1]||'';
 const ytHandle=u=>{const m=String(u).match(/youtube\.com\/(@[^/?#]+)/);return m?decodeURIComponent(m[1]):'';};
 function replaceAll(arr,items){arr.splice(0,arr.length,...items);}
 
@@ -1094,7 +1195,7 @@ async function loadSheet(){
   try{
     // 속도: 시트 탭을 모두 동시에 요청 (블로그·용품은 실패해도 나머지는 보이도록 따로 받아 둠)
     // 예전 글 방식 '꿀팁' 탭은 화면에서 쓰지 않아서 요청하지 않음
-    const extra=['블로그','용품'].map(n=>loadTab(n).catch(e=>{console.warn(`${n} 탭을 읽지 못해 파일 안의 내용을 보여 줍니다.`,e);return null;}));
+    const extra=['블로그','용품','앱','웹툰'].map(n=>loadTab(n).catch(e=>{console.warn(`${n} 탭을 읽지 못해 파일 안의 내용을 보여 줍니다.`,e);return null;}));
     const [B,M,C,Y,P]=await Promise.all(['책','영화','강의','유튜브','소개'].map(loadTab));
     replaceAll(books,visible(B).map(r=>({id:yes24Id(r['YES24 주소']),title:r['제목'],author:r['저자'],category:r['주제'],
       hint:r['이럴 때 보세요'],review:r['한줄평'],pick:r['강력 추천']==='Y'})).filter(b=>b.id&&b.title));
@@ -1102,10 +1203,15 @@ async function loadSheet(){
       year:r['개봉 연도'],theme:r['주제'],hint:r['이럴 때 보세요'],url:r['TMDB 주소'],review:r['한줄평'],kind:r['분류']||''})).filter(m=>m.title));
     replaceAll(courses,visible(C).map(r=>({title:r['과정명'],provider:r['운영기관'],theme:r['주제'],hint:r['이럴 때 보세요'],
       url:r['과정 주소'],info:r['안내 문구'],review:r['한줄평']})).filter(c=>c.title));
-    replaceAll(youtube,visible(Y).map(r=>({url:r['채널 주소'],title:r['채널명'],handle:r['핸들']||ytHandle(r['채널 주소']),
-      avatar:r['프로필 사진 주소'],theme:r['주제'],hint:r['이럴 때 보세요'],about:r['채널 소개'],medical:r['건강 정보']==='Y',review:r['한줄평']})).filter(y=>y.title));
+    // 유튜브: '채널 주소' 칸에 영상 주소(watch?v= · youtu.be · shorts)를 넣으면 개별 영상 카드로 보여 줌
+    replaceAll(youtube,visible(Y).map(r=>{const u=r['채널 주소'],v=ytVideoId(u);
+      return {url:u,video:v,title:v?(r['영상 제목']||r['채널명']):r['채널명'],channel:v?r['채널명']:'',handle:r['핸들']||ytHandle(u),
+      avatar:r['프로필 사진 주소'],theme:r['주제'],hint:r['이럴 때 보세요'],about:r['채널 소개'],medical:r['건강 정보']==='Y',review:r['한줄평']};}).filter(y=>y.title));
     // 블로그(후기 탭)·용품: 못 읽은 탭은 파일 안의 내용 유지
-    const [G1,G2]=await Promise.all(extra);
+    const [G1,G2,A,W]=await Promise.all(extra);
+    if(W) replaceAll(webtoons,visible(W).map(r=>({url:r['웹툰 주소'],hint:r['이럴 때 보세요'],title:r['제목'],author:r['작가'],days:r['연재'],cover:r['표지 주소']})).filter(w=>w.url&&w.title));
+    if(A) replaceAll(apps,visible(A).map(r=>({title:r['앱 이름'],hint:r['이럴 때 보세요'],about:r['한 줄 소개'],topic:r['주제'],
+      ios:r['App Store 주소'],android:r['Google Play 주소'],icon:r['아이콘 주소'],dev:r['개발사']})).filter(a=>a.title));
     for(const [G,arr] of [[G1,blogs],[G2,goods]]){
       if(G) replaceAll(arr,visible(G).map(r=>({url:r['블로그 주소'],title:r['제목'],hint:r['이럴 때 보세요'],thumb:r['썸네일 주소'],
         date:r['작성일'],topic:r['주제']})).filter(b=>b.url&&b.title));
